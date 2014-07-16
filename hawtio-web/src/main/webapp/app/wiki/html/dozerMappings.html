@@ -39,7 +39,7 @@
     <div class="tab-pane" title="Mappings">
 
       <div class="row-fluid">
-        <div class="span12 centered spacer">
+        <div class="col-md-12 centered spacer">
           <select class="no-bottom-margin" ng-model="selectedMapping" ng-options="m.map_id for m in mappings"></select>
           <button class="btn"
                   ng-click="addMapping()"
@@ -60,9 +60,9 @@
 
       <div class="row-fluid">
         <!-- "From" class header -->
-        <div class="span5">
+        <div class="col-md-5">
           <div class="row-fluid">
-            <input type="text" class="span12"
+            <input type="text" class="col-md-12"
                    ng-model="aName"
                    typeahead="title for title in classNames($viewValue) | filter:$viewValue"
                    typeahead-editable="true" title="Java classname for class 'A'"
@@ -82,14 +82,14 @@
           </div>
         </div>
 
-        <div class="span2 centered">
+        <div class="col-md-2 centered">
           <button class="btn" ng-click="doReload()" ng-disabled="disableReload()"><i class="icon-refresh"></i> Reload</button>
         </div>
 
         <!-- "To" class header -->
-        <div class="span5">
+        <div class="col-md-5">
           <div class="row-fluid">
-            <input type="text" class="span12"
+            <input type="text" class="col-md-12"
                    ng-model="bName"
                    typeahead="title for title in classNames($viewValue) | filter:$viewValue"
                    typeahead-editable="true" title="Java classname for class 'B'"
@@ -129,7 +129,7 @@
         <div hawtio-jsplumb draggable="false" layout="false" timeout="500">
 
           <!-- "from" class -->
-          <div class="span6">
+          <div class="col-md-6">
             <div class="row-fluid" ng-hide="selectedMapping.class_a.error">
               <ul class="dozer-mappings from">
                 <li ng-repeat="field in selectedMapping.class_a.properties"
@@ -140,7 +140,7 @@
 
 
           <!-- "to" class -->
-          <div class="span6">
+          <div class="col-md-6">
             <div class="row-fluid" ng-hide="selectedMapping.class_b.error">
               <ul class="dozer-mappings to">
                 <li ng-repeat="field in selectedMapping.class_b.properties"
@@ -157,7 +157,7 @@
     <div class="tab-pane" title="Tree">
 
       <div class="row-fluid">
-        <div class="span12">
+        <div class="col-md-12">
           <ul class="nav nav-pills">
             <li>
               <a href='' title="Add a new mapping between two classes" ng-click="addMapping()" data-placement="bottom">
@@ -173,13 +173,13 @@
       </div>
 
       <div class="row-fluid">
-        <div id="tree-container" class="span4">
+        <div id="tree-container" class="col-md-4">
           <div hawtio-tree="mappingTree" onselect="onNodeSelect" onDragEnter="onNodeDragEnter" onDrop="onNodeDrop"
                onRoot="onRootTreeNode"
                hideRoot="true"></div>
         </div>
 
-        <div class="span8">
+        <div class="col-md-8">
           <div ng-include="propertiesTemplate"></div>
         </div>
       </div>

@@ -22,7 +22,7 @@ Using the directive is straight forward and an example is within the OSGi plugin
       </div>
 
       <div class="row-fluid">
-        <div class="span12 canvas">
+        <div class="col-md-12 canvas">
           <div hawtio-force-graph graph="graph" link-distance="100" charge="-300" nodesize="10" style="min-height: 800px"></div>
         </div>
       </div>

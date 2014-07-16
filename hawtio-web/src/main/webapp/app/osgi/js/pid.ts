@@ -226,10 +226,10 @@ module Osgi {
         properties: properties
       };
       $scope.schema = schema;
-      var inputClass = "span12";
+      var inputClass = "col-md-12";
       var labelClass = "control-label";
 
-      var inputClassArray = "span11";
+      var inputClassArray = "col-md-11";
       var labelClassArray = labelClass;
 
       var metaType = $scope.metaType;

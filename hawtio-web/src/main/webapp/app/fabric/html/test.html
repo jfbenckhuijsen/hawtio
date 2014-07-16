@@ -40,7 +40,7 @@
   <!--
 <div class="row-fluid">
 
-<div class="span3">
+<div class="col-md-3">
 <p>Maven completion</p>
 <p>Model: {{someUri}}</p>
 <p>uriParts</p>
@@ -49,10 +49,10 @@
 </ol>
 <input class="input-xlarge" type="text" ng-model="someUri" typeahead="name for name in doCompletionMaven($viewValue) | filter:$viewValue" typeahead-wait-ms="200">
 </div>
-<div class="span1">
+<div class="col-md-1">
 
 </div>
-<div class="span3">
+<div class="col-md-3">
 <p>Fabric completion</p>
 <p>Model: {{someUri2}}</p>
 <p>uriParts</p>
@@ -107,10 +107,10 @@
 
 
     <!--
-    <div class="span3">
+    <div class="col-md-3">
       <div fabric-profile-selector='osp' version-id='vid' included-profiles="someProfiles"></div>
     </div>
-    <div class="span3">
+    <div class="col-md-3">
       <div fabric-profile-selector='osp' version-id='vid' excluded-profiles="someProfiles"></div>
     </div>
     -->
@@ -120,11 +120,11 @@
 
   <!--
   <div class="row-fluid">
-    <div class="span3">
+    <div class="col-md-3">
       <div fabric-version-selector='version'></div>
       <div fabric-profile-selector='selectedProfiles' version-id='versionId'></div>
     </div>
-    <div class="span3">
+    <div class="col-md-3">
       <p>Selected version: {{version.id}}</p>
       <p>Selected profiles:
         <ul>

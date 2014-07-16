@@ -79,7 +79,7 @@
                     </td>
                     <!-- Histogram -->
                     <td ng-show="facetType == 'histogram'">
-                        <div class="span10" style="height:350px">
+                        <div class="col-md-10" style="height:350px">
                             <span class="title">Histogram</span>
                             <fs:bar
                                     width="900"
@@ -90,7 +90,7 @@
                         </div>
                     </td>
                     <td ng-show="facetType == 'date_histogram'">
-                        <div class="span8" style="height:350px">
+                        <div class="col-md-8" style="height:350px">
                             <span class="title">Date Histogram</span>
                             <fs:date-histo
                                     duration="750"
@@ -130,7 +130,7 @@
 
         <!-- TODO Error Panel
         <div class="row-fluid">
-            <div class="span12 alert alert-error panel-error" ng-hide="!panel.error">
+            <div class="col-md-12 alert alert-error panel-error" ng-hide="!panel.error">
                 <a class="close" ng-click="panel.error=false">&times;</a>
                 <i class="icon-exclamation-sign"></i> <strong>Oops!</strong> {{panel.error}}
             </div>

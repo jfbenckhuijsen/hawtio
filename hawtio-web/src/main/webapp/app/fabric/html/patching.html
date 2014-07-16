@@ -1,14 +1,14 @@
 <div class="controller-section" ng-controller="Fabric.PatchingController">
 
   <div class="row-fluid">
-    <span class="span12">
+    <span class="col-md-12">
       <h2>Applying patch to version {{targetVersion}}...</h2>
       <hr>
     </span>
   </div>
 
   <div class="row-fluid">
-    <div class="span6 offset3">
+    <div class="col-md-6 col-md-offset-3">
       <p>Upload one or more patch files to apply to this fabric</p>
       <div hawtio-file-upload="files" target="patches"></div>
       <hr>
@@ -16,7 +16,7 @@
   </div>
 
   <div class="row-fluid">
-    <div class="span6 offset3">
+    <div class="col-md-6 col-md-offset-3">
       <p>Enter a name for the new version, or leave blank to use the next available version.  Version names should be in a form like 1.1.foo, avoid using version names like 1.1-foo:</p>
       <input type="text" ng-model="newVersionName">
       <p>Enter administrator credentials for fabric:</p>
@@ -43,7 +43,7 @@
   </div>
 
   <div class="row-fluid">
-    <div class="span6 offset3">
+    <div class="col-md-6 col-md-offset-3">
       <hr>
       <div class="pull-right">
         <button class="btn btn-danger" ng-click="cancel()"><i class="icon-cancel"></i> Cancel</button>

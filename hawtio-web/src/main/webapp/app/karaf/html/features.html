@@ -1,7 +1,7 @@
 <div class="controller-section" ng-controller="Karaf.FeaturesController">
 
   <div class="row-fluid section-filter">
-    <input type="text" class="span12 search-query" placeholder="Filter..." ng-model="filter">
+    <input type="text" class="col-md-12 search-query" placeholder="Filter..." ng-model="filter">
     <i class="icon-remove clickable" title="Clear filter" ng-click="filter = ''"></i>
   </div>
 
@@ -20,7 +20,7 @@
 
   <p></p>
   <div class="row-fluid">
-    <div class="span6">
+    <div class="col-md-6">
       <h3 class="centered">Installed Features</h3>
       <div ng-show="featuresError" class="alert alert-warning">
         The feature list returned by the server was null, please check the logs and Karaf console for errors.
@@ -53,7 +53,7 @@
       </div>
     </div>
 
-    <div class="span6">
+    <div class="col-md-6">
       <h3 class="centered">Available Features</h3>
       <div class="row-fluid repository-browser-toolbar centered">
         <select id="repos"

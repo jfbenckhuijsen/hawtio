@@ -115,7 +115,7 @@ module Wiki {
       if (!$scope.children || $scope.children.length === 0) {
         return "";
       }
-      return "span9";
+      return "col-md-9";
     };
 
     $scope.parentLink = () => {

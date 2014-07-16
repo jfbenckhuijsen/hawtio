@@ -1,6 +1,6 @@
 <div class="row-fluid">
 
-  <div id="tree-container" class="span3">
+  <div id="tree-container" class="col-md-3">
     <ul id="tree-ctrl" class="nav">
       <li>
         <a data-target="#cameltree">
@@ -11,7 +11,7 @@
     <div id="infinispantree" ng-controller="Infinispan.TreeController"></div>
   </div>
 
-  <div class="span9">
+  <div class="col-md-9">
     <ng-include src="'app/jmx/html/subLevelTabs.html'"></ng-include>
     <div id="properties" ng-view></div>
   </div>

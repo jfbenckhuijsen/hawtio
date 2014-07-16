@@ -25,18 +25,18 @@
         <ol class="zebra-list header-list">
           <div class="row-fluid">
             <li ng-repeat="header in headers">
-              <div class="span4">
+              <div class="col-md-4">
                 <input type="text" style="width: 100%" class="headerName"
                        ng-model="header.name"
                        typeahead="completion for completion in defaultHeaderNames() | filter:$viewValue"
                        typeahead-editable='true'
                        placeholder="Header name">
               </div>
-              <div class="span6">
+              <div class="col-md-6">
                 <input type="text" style="width: 100%" ng-model="header.value"
                        placeholder="Value of the message header">
               </div>
-              <div class="span2">
+              <div class="col-md-2">
                 <button type="submit" class="btn" title="Add a new message header">
                   <i class="icon-plus"></i>
                 </button>

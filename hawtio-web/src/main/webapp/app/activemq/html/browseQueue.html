@@ -1,10 +1,10 @@
 <div ng-controller="ActiveMQ.BrowseQueueController">
   <div class="row-fluid">
-    <div class="span6">
-      <input class="search-query span12" type="text" ng-model="gridOptions.filterOptions.filterText"
+    <div class="col-md-6">
+      <input class="search-query col-md-12" type="text" ng-model="gridOptions.filterOptions.filterText"
              placeholder="Filter messages">
     </div>
-    <div class="span6">
+    <div class="col-md-6">
       <div class="pull-right">
         <form class="form-inline">
           <button class="btn" ng-disabled="!gridOptions.selectedItems.length" ng-show="dlq" ng-click="retryMessages()"

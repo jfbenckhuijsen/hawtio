@@ -14,11 +14,11 @@
 </style>
 <div ng-controller="JUnit.TreeController">
   <div class="row-fluid test-toolbar">
-    <div class="span8">
-      <input class="search-query span12" type="text" ng-model="gridOptions.filterOptions.filterText"
+    <div class="col-md-8">
+      <input class="search-query col-md-12" type="text" ng-model="gridOptions.filterOptions.filterText"
              placeholder="Filter tests">
     </div>
-    <div class="span4">
+    <div class="col-md-4">
       <div class="pull-right">
         <form class="form-inline">
           <button class="btn pull-right" ng-click="runTests()" ng-disabled="runningTests() || !gridOptions.selectedItems.length">

@@ -103,13 +103,13 @@
     <div class="modal-body">
 
       <div class="row-fluid">
-        <div class="span6 scrollable-section">
+        <div class="col-md-6 scrollable-section">
           <div hawtio-tree="createDocumentTree"
                hideRoot="true"
                onSelect="onCreateDocumentSelect"
                activateNodes="createDocumentTreeActivations"></div>
         </div>
-        <div class="span6 scrollable-section">
+        <div class="col-md-6 scrollable-section">
           <div class="well">
             {{selectedCreateDocumentTemplate.tooltip}}
           </div>
@@ -118,7 +118,7 @@
 
       <div class="row-fluid">
 
-        <div class="span12">
+        <div class="col-md-12">
           <p></p>
           <div ng-show="fileExists.exists" class="alert">
             Please choose a different name as <b>{{fileExists.name}}</b> already exists
@@ -151,7 +151,7 @@
   <div class="modal-header"><h4>Step 2: Document Settings</h4></div>
   <div class="modal-body">
     <div class="row-fluid">
-      <div class="span12">
+      <div class="col-md-12">
         <div simple-form data="formSchema" entity="formData" onSubmit="generate()"></div>
       </div>
     </div>

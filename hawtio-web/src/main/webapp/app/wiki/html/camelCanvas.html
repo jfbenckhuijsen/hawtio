@@ -20,7 +20,7 @@
 
 
     <div class="row-fluid">
-      <div class="span12">
+      <div class="col-md-12">
         <ul class="nav nav-tabs">
           <li ng-class="{active : true}">
             <a ng-href='{{startLink}}/camel/canvas/{{pageId}}' title="Edit the diagram in a draggy droppy way"
@@ -97,7 +97,7 @@
                   <label class="control-label" for="endpointPath">Endpoint</label>
 
                   <div class="controls">
-                    <input id="endpointPath" class="span10" type="text" ng-model="endpointPath" placeholder="name"
+                    <input id="endpointPath" class="col-md-10" type="text" ng-model="endpointPath" placeholder="name"
                            typeahead="title for title in endpointCompletions($viewValue) | filter:$viewValue"
                            typeahead-editable='true'
                            min-length="1">
@@ -178,7 +178,7 @@
                     <label class="control-label" for="endpointPath">URI:</label>
 
                     <div class="controls">
-                      <input id="endpointPath" class="span10" type="text" ng-model="endpointPath" placeholder="name"
+                      <input id="endpointPath" class="col-md-10" type="text" ng-model="endpointPath" placeholder="name"
                              typeahead="title for title in endpointCompletions($viewValue) | filter:$viewValue"
                              typeahead-editable='true'
                              min-length="1">

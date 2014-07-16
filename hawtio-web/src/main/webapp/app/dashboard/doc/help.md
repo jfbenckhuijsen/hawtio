@@ -3,7 +3,7 @@
 The dashboard plugin lets you view, create and modify dashboards of widgets for displaying real time metrics, diagrams or metrics.
 
 <ul class="thumbnails">
-  <li class="span4">
+  <li class="col-md-4">
     <div class="thumbnail">
       <img src="https://raw.github.com/hawtio/hawtio/master/website/src/images/screenshots/dashboard.png" alt="screenshot">
       <h5>Sample dashboard</h5>
@@ -17,7 +17,7 @@ The dashboard plugin lets you view, create and modify dashboards of widgets for 
 * to add new content to a dashboard click the share icon <i class="icon-share"></i> icon on the top right of a view (such as when viewing the JMX tab to show attributes or charts).
 
 <ul class="thumbnails">
-  <li class="span4">
+  <li class="col-md-4">
     <div class="thumbnail">
       <img src="https://raw.github.com/hawtio/hawtio/master/website/src/images/screenshots/jmx.png" alt="screenshot">
       <h5>JMX page</h5>

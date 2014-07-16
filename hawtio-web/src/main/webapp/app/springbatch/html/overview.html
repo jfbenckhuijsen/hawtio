@@ -2,23 +2,23 @@
 
 
     <div class="row-fluid">
-        <div class="span9">
+        <div class="col-md-9">
             <div class="row-fluid">
-                <div class="span2"><strong>Job Instance ID:</strong></div>
-                <div class="span1"><span class="text-info">{{jobInstance.id}}</span></div>
-                <div class="span3">
+                <div class="col-md-2"><strong>Job Instance ID:</strong></div>
+                <div class="col-md-1"><span class="text-info">{{jobInstance.id}}</span></div>
+                <div class="col-md-3">
                     <span style="cursor: pointer" ng-click="fetchPrevJobInstance(jobInstance)"> <i class="icon-backward icon-2x"></i> </span>  &nbsp;
                     <span style="cursor: pointer" ng-click="refreshJobInstance(jobInstance)"> <i class="icon-refresh icon-2x"></i> </span>  &nbsp;
                     <span style="cursor: pointer" ng-click="fetchNextJobInstance(jobInstance)"> <i class="icon-forward icon-2x"></i> </span>  &nbsp;
                 </div>
-                <div class="span3">
+                <div class="col-md-3">
                     <span id="jobExecutionStatus">
                         <span   class="btn-large {{(jobInstance.lastJobExecutionStatus == 'COMPLETED')?'btn-success':'btn-danger'}}">
                             {{jobInstance.lastJobExecutionStatus}}
                         </span>
                     </span>
                 </div>
-                <div class="span3">
+                <div class="col-md-3">
                     <div class="dropdown">
                         <a class="dropdown-toggle btn btn-primary" data-toggle="dropdown" href="#">Actions <b class="caret"></b></a>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
@@ -127,7 +127,7 @@
             </div>
         </div>
 
-        <div class="span1">
+        <div class="col-md-1">
 
             <table>
                 <thead>

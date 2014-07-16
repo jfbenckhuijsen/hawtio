@@ -3,7 +3,7 @@
 The wiki plugin implements a wiki for viewing, creating and editing text files (Markdown, HTML, XML, property files, JSON) which are then versioned and stored in a git repository.
 
 <ul class="thumbnails">
-  <li class="span4">
+  <li class="col-md-4">
     <div class="thumbnail">
       <img src="https://raw.github.com/hawtio/hawtio/master/website/src/images/screenshots/wiki.png" alt="screenshot">
       <h3>viewing the wiki</h3>

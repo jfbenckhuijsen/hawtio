@@ -1,14 +1,14 @@
 <div ng-controller="Core.HelpController">
   <div class="row-fluid">
-    <div class="span2">
+    <div class="col-md-2">
       <ul class="nav help-sidebar">
         <li ng-repeat="section in sections" ng-class="{active : section.active}">
           <a ng-href="{{sectionLink(section)}}">{{section.label}}</a>
         </li>
       </ul>
     </div>
-    <div class="span1 help-spacer"></div>
-    <div class="span8">
+    <div class="col-md-1 help-spacer"></div>
+    <div class="col-md-8">
       <div class="row">
         <ul class="nav nav-tabs connected">
           <li ng-repeat="breadcrumb in breadcrumbs" ng-class="{active : breadcrumb.active}">

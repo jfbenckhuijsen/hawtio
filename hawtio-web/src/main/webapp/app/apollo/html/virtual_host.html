@@ -3,7 +3,7 @@
      ng-if='apollo.selected_virtual_host'
      class="row-fluid">
      
-  <div class="span4">
+  <div class="col-md-4">
     <div class="well" style="padding: 8px 8px">
       <div class="well-title">Details</div>
       <table class="details table table-bordered table-striped">
@@ -21,7 +21,7 @@
     <ng-include ng-if='virtual_host.store' src="'app/apollo/html/store.html'"></ng-include>
   
   </div>
-  <div class="span8">
+  <div class="col-md-8">
     <ul class="nav nav-tabs"><li class="active"><a href="#">Queues</a></li><li><a href="#">Topics</a></li><li><a href="#">Durable Subs</a></li></ul>
     <ng-include src="'app/apollo/html/queues.html'"></ng-include>
   </div>
