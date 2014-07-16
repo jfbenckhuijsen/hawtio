@@ -7,7 +7,7 @@
 /// <reference path="../../helpers/js/filterHelpers.ts"/>
 module Fabric {
 
-  export var ContainerViewController = _module.controller("Fabric.ContainerViewController", ["$scope", "jolokia", "$location", "localStorage", "$route", "workspace", "marked", "ProfileCart", "$dialog", ($scope, jolokia, $location, localStorage, $route, workspace:Workspace, marked, ProfileCart, $dialog) => {
+  export var ContainerViewController = _module.controller("Fabric.ContainerViewController", ["$scope", "jolokia", "$location", "localStorage", "$route", "workspace", "marked", "ProfileCart", "$modal", ($scope, jolokia, $location, localStorage, $route, workspace:Workspace, marked, ProfileCart, $dialog) => {
 
     $scope.name = ContainerViewController.name;
     $scope.containers = <Array<Container>>[];

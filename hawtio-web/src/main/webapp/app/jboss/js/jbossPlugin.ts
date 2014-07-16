@@ -5,7 +5,7 @@
 /// <reference path="jbossHelpers.ts"/>
 module JBoss {
   var pluginName = 'jboss';
-  export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'ngResource', 'ui.bootstrap.dialog', 'hawtioCore']);
+  export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'ngResource', 'ui.bootstrap.modal', 'hawtioCore']);
 
   _module.config(["$routeProvider", ($routeProvider) => {
     $routeProvider.

@@ -3,7 +3,7 @@
 /// <reference path="containerHelpers.ts"/>
 module Fabric {
 
-  _module.controller("Fabric.ContainersController", ["$scope", "$location", "$route", "jolokia", "workspace", "$dialog", ($scope, $location, $route, jolokia, workspace, $dialog) => {
+  _module.controller("Fabric.ContainersController", ["$scope", "$location", "$route", "jolokia", "workspace", "$modal", ($scope, $location, $route, jolokia, workspace, $dialog) => {
 
     Fabric.initScope($scope, $location, jolokia, workspace);
 

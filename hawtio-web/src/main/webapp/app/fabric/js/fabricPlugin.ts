@@ -16,7 +16,7 @@ module Fabric {
   export var templatePath = 'app/fabric/html/';
   export var activeMQTemplatePath = 'app/activemq/html/';
 
-  export var _module = angular.module('fabric', ['ui.bootstrap', 'ui.bootstrap', 'ui.bootstrap.dialog', 'ngResource', 'ngGrid', 'hawtio-forms', 'hawtioCore', 'ngDragDrop', 'wiki']);
+  export var _module = angular.module('fabric', ['ui.bootstrap', 'ui.bootstrap', 'ui.bootstrap.modal', 'ngResource', 'ngGrid', 'hawtio-forms', 'hawtioCore', 'ngDragDrop', 'wiki']);
 
   _module.config(["$routeProvider", ($routeProvider) => {
     $routeProvider.
@@ -60,7 +60,7 @@ module Fabric {
     return Fabric.containerIconRegistry;
   });
 
-  _module.run(["$location", "workspace", "jolokia", "viewRegistry", "pageTitle", "helpRegistry", "$rootScope", "postLoginTasks", "preferencesRegistry", "wikiBranchMenu", "$dialog", "layoutFull", ($location: ng.ILocationService,
+  _module.run(["$location", "workspace", "jolokia", "viewRegistry", "pageTitle", "helpRegistry", "$rootScope", "postLoginTasks", "preferencesRegistry", "wikiBranchMenu", "$modal", "layoutFull", ($location: ng.ILocationService,
                workspace: Workspace,
                jolokia,
                viewRegistry,

@@ -3,7 +3,7 @@
  */
 /// <reference path="./osgiPlugin.ts"/>
 module Osgi {
-    _module.controller("Osgi.FrameworkController", ["$scope", "$dialog", "workspace", ($scope, $dialog, workspace:Workspace) => {
+    _module.controller("Osgi.FrameworkController", ["$scope", "$modal", "workspace", ($scope, $dialog, workspace:Workspace) => {
         $scope.editDialog = new UI.Dialog();
 
         updateContents();
