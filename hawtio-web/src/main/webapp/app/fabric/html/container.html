@@ -381,7 +381,7 @@
           <dl>
             <dt>Provision Exception:</dt>
             <dd>
-              <div ng-bind-html-unsafe="formatStackTrace(row.provisionExceptionArray)"></div>
+              <div ng-bind-html="formatStackTrace(row.provisionExceptionArray)"></div>
             </dd>
           </dl>
         </div>
@@ -409,7 +409,7 @@
         </ng-pluralize>
         from container {{row.id}}:
       </p>
-      <ul ng-bind-html-unsafe="selectedProfilesString"></ul>
+      <ul ng-bind-html="selectedProfilesString"></ul>
     </div>
   </div>
 

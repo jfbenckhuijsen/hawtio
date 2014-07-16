@@ -13,7 +13,7 @@ module UI {
 
   export var templatePath = 'app/ui/html/';
 
-  export var _module = angular.module(UI.pluginName, ['bootstrap', 'ngResource', 'ui', 'ui.bootstrap']);
+  export var _module = angular.module(UI.pluginName, ['ngRoute', 'ui.bootstrap', 'ngResource', /*'ui', */'ui.bootstrap']);
 
   _module.config(["$routeProvider", ($routeProvider) => {
     $routeProvider.

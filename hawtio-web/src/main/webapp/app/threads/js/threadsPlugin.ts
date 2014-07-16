@@ -11,7 +11,7 @@ module Threads {
   export var mbeanType = 'Threading';
   export var mbean = jmxDomain + ":type=" + mbeanType;
 
-  export var _module = angular.module(pluginName, ['bootstrap', 'ngResource', 'hawtioCore', 'ui']);
+  export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'ngResource', 'hawtioCore'/*, 'ui'*/]);
 
   _module.config(["$routeProvider", ($routeProvider) => {
     $routeProvider.

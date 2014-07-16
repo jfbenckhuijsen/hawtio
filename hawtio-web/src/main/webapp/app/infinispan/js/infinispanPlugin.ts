@@ -9,7 +9,7 @@ module Infinispan {
 
   var toolBar = "app/infinispan/html/attributeToolBar.html";
 
-  export var _module = angular.module(pluginName, ['bootstrap', 'ngResource', 'hawtioCore']);
+  export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'ngResource', 'hawtioCore']);
 
   _module.config(["$routeProvider", ($routeProvider) => {
     $routeProvider.

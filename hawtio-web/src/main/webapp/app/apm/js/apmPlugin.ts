@@ -10,7 +10,7 @@ module Apm {
 
   export var pluginName = 'apm';
 
-  export var _module = angular.module(pluginName, ['bootstrap', 'ui.bootstrap', 'ui.bootstrap.dialog', 'ui.bootstrap.tabs', 'ui.bootstrap.typeahead', 'ngResource', 'hawtioCore', 'hawtio-ui']);
+  export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'ui.bootstrap', 'ui.bootstrap.dialog', 'ui.bootstrap.tabs', 'ui.bootstrap.typeahead', 'ngResource', 'hawtioCore', 'hawtio-ui']);
 
   _module.config(["$routeProvider", ($routeProvider) => {
 /*

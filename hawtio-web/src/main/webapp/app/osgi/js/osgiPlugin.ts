@@ -6,7 +6,7 @@
 module Osgi {
   var pluginName = 'osgi';
 
-  export var _module = angular.module(pluginName, ['bootstrap', 'ngResource', 'ngGrid', 'hawtioCore', 'hawtio-ui']);
+  export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'ngResource', 'ngGrid', 'hawtioCore', 'hawtio-ui']);
   
   _module.config(["$routeProvider", ($routeProvider) => {
     $routeProvider.

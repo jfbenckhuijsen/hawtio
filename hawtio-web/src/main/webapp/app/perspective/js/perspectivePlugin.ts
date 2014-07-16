@@ -7,7 +7,7 @@
 module Perspective {
   var pluginName = 'perspective';
 
-  export var _module = angular.module(pluginName, ['hawtioCore']);
+  export var _module = angular.module(pluginName, ['ngRoute', 'hawtioCore']);
 
   _module.config(["$routeProvider", ($routeProvider) => {
     $routeProvider.

@@ -6,7 +6,7 @@
 module ForceGraph {
     var pluginName = 'forceGraph';
 
-    export var _module = angular.module(pluginName, ['bootstrap', 'ngResource']);
+    export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'ngResource']);
 
     _module.directive('hawtioForceGraph', function () {
         return new ForceGraph.ForceGraphDirective();

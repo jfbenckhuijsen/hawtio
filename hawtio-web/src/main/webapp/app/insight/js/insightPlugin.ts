@@ -8,7 +8,7 @@ module Insight {
     export var pluginName = 'insight';
 
     // create our angular module and tell angular what route(s) it will handle
-    export var _module = angular.module(pluginName, ['hawtioCore']);
+    export var _module = angular.module(pluginName, ['ngRoute', 'hawtioCore']);
 
     _module.config(["$routeProvider", ($routeProvider) => {
         $routeProvider.

@@ -245,5 +245,3 @@ var hawtioPluginLoader = (function(self, window, undefined) {
   return self;
 
 })(hawtioPluginLoader || {}, window, undefined);
-
-

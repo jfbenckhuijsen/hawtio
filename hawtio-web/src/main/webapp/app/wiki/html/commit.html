@@ -5,7 +5,7 @@
     <div class="ngCellText">
       <a ng-href="{{row.entity.fileLink}}" class="file-name"
          title="{{row.entity.title}}">
-        <span class="file-icon" ng-class="row.entity.fileClass" ng-bind-html-unsafe="row.entity.fileIconHtml"></span>
+        <span class="file-icon" ng-class="row.entity.fileClass" ng-bind-html="row.entity.fileIconHtml"></span>
         <span ng-class="row.entity.changeClass">{{row.entity.path}}</span>
       </a>
     </div>

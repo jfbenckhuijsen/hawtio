@@ -7,7 +7,7 @@ module DataTable {
   export var pluginName = 'datatable';
   export var log:Logging.Logger = Logger.get("DataTable");
 
-  export var _module = angular.module(pluginName, ['bootstrap', 'ngResource']);
+  export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'ngResource']);
 
   _module.config(["$routeProvider", ($routeProvider) => {
     $routeProvider.

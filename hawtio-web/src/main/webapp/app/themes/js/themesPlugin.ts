@@ -125,7 +125,7 @@ module Themes {
 
   export var pluginName = "themes";
   export var log:Logging.Logger = Logger.get("Themes");
-  export var _module = angular.module(pluginName, ["hawtioCore"]);
+  export var _module = angular.module(pluginName, ['ngRoute', "hawtioCore"]);
 
   _module.run(["localStorage", "branding", "preferencesRegistry", (localStorage, branding, preferencesRegistry) => {
     var themeName = localStorage['theme'];

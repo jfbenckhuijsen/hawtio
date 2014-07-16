@@ -5,7 +5,7 @@
 /// <reference path="./sourceHelpers.ts"/>
 module Source {
   var pluginName = 'source';
-  export var _module = angular.module(pluginName, ['bootstrap', 'ngResource', 'hawtioCore', 'wiki']);
+  export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'ngResource', 'hawtioCore', 'wiki']);
 
   _module.config(["$routeProvider", ($routeProvider) => {
     $routeProvider.

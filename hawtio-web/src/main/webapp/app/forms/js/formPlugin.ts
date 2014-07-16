@@ -4,7 +4,7 @@ module Forms {
   export var pluginName = 'hawtio-forms';
   export var log:Logging.Logger = Logger.get("Forms");
 
-  export var _module = angular.module(Forms.pluginName, ['bootstrap', 'ngResource', 'hawtioCore', 'datatable', 'ui.bootstrap', 'ui.bootstrap.dialog', 'hawtio-ui']);
+  export var _module = angular.module(Forms.pluginName, ['ngRoute', 'ui.bootstrap', 'ngResource', 'hawtioCore', 'datatable', 'ui.bootstrap', 'ui.bootstrap.dialog', 'hawtio-ui']);
 
   _module.config(["$routeProvider", ($routeProvider) => {
     $routeProvider.

@@ -15,7 +15,7 @@ module Wiki {
   export var templatePath = 'app/wiki/html/';
   export var tab:any = null;
 
-  export var _module = angular.module(pluginName, ['bootstrap', 'ui.bootstrap.dialog', 'ui.bootstrap.tabs', 'ngResource', 'hawtioCore', 'hawtio-ui', 'tree', 'camel']);
+  export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'ui.bootstrap.dialog', 'ui.bootstrap.tabs', 'ngResource', 'hawtioCore', 'hawtio-ui', 'tree', 'camel']);
 
   _module.config(["$routeProvider", ($routeProvider) => {
 

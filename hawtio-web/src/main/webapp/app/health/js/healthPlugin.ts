@@ -5,7 +5,7 @@
 /// <reference path="healthHelpers.ts"/>
 module Health {
   var pluginName = 'health';
-  export var _module = angular.module(pluginName, ['bootstrap', 'ngResource', 'hawtioCore', 'hawtio-ui']);
+  export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'ngResource', 'hawtioCore', 'hawtio-ui']);
 
   _module.config(["$routeProvider", ($routeProvider) => {
     $routeProvider.

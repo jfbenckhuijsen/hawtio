@@ -75,7 +75,7 @@
                   <i class="expandable-indicator"></i> Failed to load properties for {{selectedMapping.class_a.value}} due to {{selectedMapping.class_a.error.type}}
                 </div>
                 <div class="expandable-body well">
-                  <div ng-bind-html-unsafe="formatStackTrace(selectedMapping.class_a.error.stackTrace)"></div>
+                  <div ng-bind-html="formatStackTrace(selectedMapping.class_a.error.stackTrace)"></div>
                 </div>
               </div>
             </div>
@@ -102,7 +102,7 @@
                   <i class="expandable-indicator"></i> Failed to load properties for {{selectedMapping.class_b.value}} due to {{selectedMapping.class_b.error.type}}
                 </div>
                 <div class="expandable-body well">
-                  <div ng-bind-html-unsafe="formatStackTrace(selectedMapping.class_b.error.stackTrace)"></div>
+                  <div ng-bind-html="formatStackTrace(selectedMapping.class_b.error.stackTrace)"></div>
                 </div>
               </div>
             </div>

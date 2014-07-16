@@ -40,7 +40,7 @@ module Core {
   /**
    * The main hawtio core App module
    */
-  export var _module = angular.module(Core.pluginName, ['bootstrap', 'ngResource', 'ui', 'ui.bootstrap.dialog', 'hawtio-ui']);
+  export var _module = angular.module(Core.pluginName, ['ngRoute', 'ngSanitize', 'ui.bootstrap', 'ngResource', /*'ui', */'ui.bootstrap.dialog', 'hawtio-ui']);
 
   // configure the module
   _module.config(["$routeProvider", "$dialogProvider", ($routeProvider:ng.route.IRouteProvider, $dialogProvider) => {

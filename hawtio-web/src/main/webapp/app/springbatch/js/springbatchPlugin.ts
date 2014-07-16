@@ -4,7 +4,7 @@ module SpringBatch {
     export var templatePath = 'app/springbatch/html/';
     export var pluginName = 'SpringBatch';
 
-    export var _module = angular.module(pluginName, ['bootstrap', 'ngResource', 'hawtioCore', 'hawtio-ui']);
+    export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'ngResource', 'hawtioCore', 'hawtio-ui']);
 
     _module.config(["$routeProvider", ($routeProvider) => {
         $routeProvider

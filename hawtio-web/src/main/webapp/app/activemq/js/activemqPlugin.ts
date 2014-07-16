@@ -8,7 +8,7 @@ module ActiveMQ {
 
   export var pluginName = 'activemq';
 
-  export var _module = angular.module(pluginName, ['bootstrap', 'ngResource', 'ui.bootstrap.dialog', 'hawtioCore', 'camel', 'hawtio-ui']);
+  export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'ngResource', 'ui.bootstrap.dialog', 'hawtioCore', 'camel', 'hawtio-ui']);
     
   _module.config(["$routeProvider", ($routeProvider) => {
     $routeProvider.

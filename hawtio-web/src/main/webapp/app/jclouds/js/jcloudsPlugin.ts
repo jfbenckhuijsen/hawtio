@@ -6,7 +6,7 @@
 module Jclouds {
     var pluginName = 'jclouds';
 
-    export var _module = angular.module(pluginName, ['bootstrap', 'ngResource', 'ngGrid', 'hawtioCore']);
+    export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'ngResource', 'ngGrid', 'hawtioCore']);
     
     _module.config(["$routeProvider", ($routeProvider) => {
         $routeProvider.

@@ -6,7 +6,7 @@
 module Maven {
   var pluginName = 'maven';
 
-  export var _module = angular.module(pluginName, ['bootstrap', 'ngResource', 'datatable', 'tree', 'hawtioCore', 'hawtio-ui']);
+  export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'ngResource', 'datatable', 'tree', 'hawtioCore', 'hawtio-ui']);
 
   _module.config(["$routeProvider", ($routeProvider) => {
     $routeProvider.

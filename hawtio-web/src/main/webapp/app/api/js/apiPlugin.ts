@@ -7,7 +7,7 @@
 /// <reference path="apiHelpers.ts"/>
 module API {
   export var pluginName = 'api';
-  export var _module = angular.module(pluginName, ['bootstrap', 'hawtioCore', 'hawtio-ui']);
+  export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'hawtioCore', 'hawtio-ui']);
 
   _module.config(["$routeProvider", ($routeProvider) => {
     $routeProvider.

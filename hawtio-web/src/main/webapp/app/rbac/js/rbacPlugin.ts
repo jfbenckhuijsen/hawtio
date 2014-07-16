@@ -7,7 +7,7 @@ module RBAC {
 
   export var pluginName:string = "hawtioRbac";
   export var log:Logging.Logger = Logger.get("RBAC");
-  export var _module = angular.module(pluginName, ["hawtioCore"]);
+  export var _module = angular.module(pluginName, ['ngRoute', "hawtioCore"]);
 
   _module.factory('rbacTasks', ["postLoginTasks", "jolokia", (postLoginTasks:Core.Tasks, jolokia) => {
     postLoginTasks.addTask("FetchJMXSecurityMBeans", () => {

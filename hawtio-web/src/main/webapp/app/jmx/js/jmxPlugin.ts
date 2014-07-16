@@ -12,7 +12,7 @@ module Jmx {
 
   export var currentProcessId = '';
 
-  export var _module = angular.module(pluginName, ['bootstrap', 'dangle', 'ui.bootstrap', 'ui.bootstrap.modal', 'ngResource', 'datatable', 'hawtioCore', 'hawtio-ui', 'hawtioRbac']);
+  export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'dangle', 'ui.bootstrap', 'ui.bootstrap.dialog', 'ngResource', 'datatable', 'hawtioCore', 'hawtio-ui', 'hawtioRbac']);
 
   _module.config(["$routeProvider", ($routeProvider) => {
     $routeProvider.

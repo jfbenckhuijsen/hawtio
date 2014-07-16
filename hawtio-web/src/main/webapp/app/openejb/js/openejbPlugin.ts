@@ -4,7 +4,7 @@
  */
 module OpenEJB {
   var pluginName = 'openejb';
-  export var _module = angular.module(pluginName, ['bootstrap', 'ngResource', 'hawtioCore']);
+  export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'ngResource', 'hawtioCore']);
   
   _module.config(["$routeProvider", ($routeProvider) => {
       // TODO custom openejb views go here...

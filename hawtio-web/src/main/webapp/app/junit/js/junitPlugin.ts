@@ -6,7 +6,7 @@
 module JUnit {
   var pluginName = 'junit';
 
-  export var _module = angular.module(pluginName, ['bootstrap', 'ngResource', 'ngGrid', 'datatable', 'hawtioCore']);
+  export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'ngResource', 'ngGrid', 'datatable', 'hawtioCore']);
 
   _module.config(["$routeProvider", ($routeProvider) => {
     $routeProvider.

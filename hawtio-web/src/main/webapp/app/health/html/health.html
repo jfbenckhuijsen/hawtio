@@ -19,7 +19,7 @@
            ng-init="showDetails = false">
 
         <div class="health-title centered"
-             ng-bind-html-unsafe="getTitle(value)"></div>
+             ng-bind-html="getTitle(value)"></div>
         <div class="health-chart">
           <fs-donut bind="value.data"
                     color-map="value.colorMap"

@@ -11,7 +11,7 @@
         <tbody>
         <tr ng-repeat="(k, v) in feature track by $index" ng-show="showRow(k, v)">
           <td class="property-name">{{k}}</td>
-          <td class="property-value" ng-bind-html-unsafe="showValue(v)"></td>
+          <td class="property-value" ng-bind-html="showValue(v)"></td>
         </tr>
         </tbody>
       </table>

@@ -8,7 +8,7 @@
 module IDE {
     var pluginName = 'ide';
 
-    export var _module = angular.module(pluginName, ['bootstrap', 'hawtioCore']);
+    export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'hawtioCore']);
 
     _module.directive('hawtioOpenIde', ["localStorage", "workspace", "jolokia", (localStorage, workspace, jolokia) => {
         return new IDE.OpenInIdeDirective(localStorage, workspace, jolokia);

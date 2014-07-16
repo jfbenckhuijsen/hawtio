@@ -32,7 +32,7 @@
           <form class="form-horizontal no-bottom-margin" ng-submit="valueDetails.close()">
             <div class="modal-header"><h4>Job DataMap details...</h4></div>
             <div class="modal-body">
-              <div ng-bind-html-unsafe="jobsGridOptions.selectedItems[0].detailHtml"></div>
+              <div ng-bind-html="jobsGridOptions.selectedItems[0].detailHtml"></div>
             </div>
             <div class="modal-footer">
               <input class="btn" ng-click="valueDetails.close()" value="Close">

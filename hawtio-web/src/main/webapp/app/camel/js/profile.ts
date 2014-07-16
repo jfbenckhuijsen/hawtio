@@ -12,7 +12,7 @@ module Camel {
             {
                 field: 'id',
                 displayName: 'Id',
-                cellTemplate: '<div class="ngCellText" ng-bind-html-unsafe="rowIcon(row.entity.id)"></div>',
+                cellTemplate: '<div class="ngCellText" ng-bind-html="rowIcon(row.entity.id)"></div>',
                 cellFilter: null,
                 width: "**",
                 resizable: true

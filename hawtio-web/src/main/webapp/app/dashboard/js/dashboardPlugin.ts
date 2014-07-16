@@ -8,7 +8,7 @@ module Dashboard {
   export var templatePath = 'app/dashboard/html/';
   export var pluginName = 'dashboard';
   
-  export var _module = angular.module(pluginName, ['bootstrap', 'ngResource', 'hawtioCore', 'hawtio-ui']);
+  export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'ngResource', 'hawtioCore', 'hawtio-ui']);
 
   _module.config(["$routeProvider", ($routeProvider) => {
     $routeProvider.

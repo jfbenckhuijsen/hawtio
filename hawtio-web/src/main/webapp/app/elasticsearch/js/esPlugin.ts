@@ -9,7 +9,7 @@ module ES {
     var base_url = 'app/elasticsearch/html';
 
     /* Application level module which depends on filters, controllers, and services */
-    export var _module = angular.module(pluginName, ['bootstrap', 'ngResource', 'elasticjs.service', 'dangle']);
+    export var _module = angular.module(pluginName, ['ngRoute', 'ui.bootstrap', 'ngResource', 'elasticjs.service', 'dangle']);
 
     _module.config(['$routeProvider', function ($routeProvider) {
         $routeProvider
