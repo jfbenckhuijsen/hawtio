@@ -74,6 +74,7 @@ div.log-stack-trace p:nth-child(odd) {
   </head>
 
   <body>
+
     <div id="log-panel" style="bottom: 110%" ng-controller="Core.ConsoleController">
       <div>
         <ul id="log-panel-statements"></ul>
@@ -92,13 +93,11 @@ div.log-stack-trace p:nth-child(odd) {
     </div>
 
     <div id="main-body" ng-controller="Core.AppController" style="display: none;">
-      <!--  navbar-inverse -->
-      <div id="main-nav" class="navbar navbar-fixed-top" ng-show="!fullScreen()" ng-controller="Core.NavBarController">
+      <div id="main-nav" class="navbar navbar-default navbar-fixed-top" ng-show="!fullScreen()" ng-controller="Core.NavBarController">
+         <div class="navbar-inner main-nav-upper">
 
-        <div class="navbar-inner main-nav-upper">
-
-          <div class="container">
-            <div class="pull-left">
+          <div class="container-fluid">
+            <div class="navbar-nav navbar-collapse">
               <a ng-href="#"
                  title="Go to home"
                  class="brand"
@@ -107,7 +106,7 @@ div.log-stack-trace p:nth-child(odd) {
               </a>
             </div>
 
-            <div class="pull-right">
+            <div class="navbar-nav navbar-right">
               <ul class="nav nav-tabs pull-right">
                 <li ng-show="loggedIn()">
                   <a ng-href=""
@@ -170,7 +169,7 @@ div.log-stack-trace p:nth-child(odd) {
         </div>
 
         <div class="navbar-inner main-nav-lower" ng-show="!login()">
-          <div class="container">
+          <div class="container-fluid">
             <!--
             <a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
               <span>{{activeLink()}}</span>
@@ -181,7 +180,7 @@ div.log-stack-trace p:nth-child(odd) {
             <div class="nav-collapse collapsed">
             -->
 
-              <ul ng-show="loggedIn()" class="nav" hawtio-auto-dropdown>
+              <ul ng-show="loggedIn()" class="navbar-tabs" hawtio-auto-dropdown>
 
                 <li ng-show="loggedIn() && (perspectives.length > 1 || recentConnections.length)"
                     class="dropdown perspective-selector">
@@ -243,8 +242,11 @@ div.log-stack-trace p:nth-child(odd) {
                 </li>
               -->
 
+                <li class="active">
+                  <a href="#" data-placement="bottom">ASD</a>
+                </li>
                 <li ng-repeat="nav in topLevelTabs track by $index" 
-                    ng-class="{active : isActive(nav)}" 
+                    ng-class="{active : isActive(nav)}"
                     ng-show="isValid(nav)">
                   <a ng-href="{{link(nav)}}" title="{{nav.title}}" data-placement="bottom" ng-bind="nav.content">
                   </a>
@@ -475,6 +477,7 @@ div.log-stack-trace p:nth-child(odd) {
 
     <!-- Distro customisations -->
     <script type="text/javascript" src="vendor.js?v=@VERSION@"></script>
+
   </body>
 
 </html>

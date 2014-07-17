@@ -17,5 +17,6 @@ runtime-EclipseApplication-m2eclipse
 .idea
 tags
 node_modules
+bower_components
 hawtio-config
 .tscache

@@ -119,9 +119,10 @@ div.log-stack-trace p {
   height: 100%;
 }
 /* sub tab tweaks */
-body div div ul.nav {
-  margin-bottom: 5px;
+body div div ul.navbar-nav {
+  margin-bottom: 0;
   border-bottom: none;
+  list-style: none;
 }
 
 #tree-ctrl {
@@ -695,7 +696,7 @@ table.table thead .sorting_desc:after {
   margin-bottom: 0;
 }
 
-.nav {
+.navbar-nav {
   margin-bottom: 10px;
 }
 
@@ -703,12 +704,12 @@ table.table thead .sorting_desc:after {
   margin-bottom: 0px;
 }
 
-div#main div ul.nav {
+div#main div ul.navbar-nav {
   margin-bottom: 10px;
   min-width: 120px;
 }
 
-div#main div ul.nav li {
+div#main div ul.navbar-nav li {
   margin-top: 3px;
   margin-bottom: 3px;
 }
@@ -725,7 +726,7 @@ div#main div ul.nav li {
   margin-left: 7px;
 }
 
-div#main div ul.nav {
+div#main div ul.navbar-nav {
   padding-left: 3px;
   padding-right: 3px;
 }
@@ -735,24 +736,24 @@ div#main div ul.nav {
   margin-right: 0px;
 }
 
-div#main div ul.nav li a,
-div#main div ul.nav li span {
+div#main div ul.navbar-nav li a,
+div#main div ul.navbar-nav li span {
   padding-bottom: 2px;
   padding-top: 2px;
 }
 
-div#main div ul.nav li a:hover {
+div#main div ul.navbar-nav li a:hover {
   padding-bottom: 2px;
   padding-top: 2px;
 }
 
-#main div div div section .tabbable .nav.nav-tabs {
+#main div div div section .tabbable .navbar-nav.nav-tabs {
   margin-top: 0px;
   margin-bottom: 10px;
   min-width: 120px;
 }
 
-#main div div div .nav.nav-tabs:not(.connected) {
+#main div div div .navbar-nav.nav-tabs:not(.connected) {
   margin-top: 5px;
 }
 
@@ -832,8 +833,8 @@ table.dataTable tbody tr td {
   text-overflow: ellipsis;
 }
 
-#main .logbar[ng-controller='Wiki.NavBarController'] .wiki.logbar-container .nav.nav-tabs,
-#main .logbar-wiki .wiki.logbar-container .nav.nav-tabs {
+#main .logbar[ng-controller='Wiki.NavBarController'] .wiki.logbar-container .navbar-nav.nav-tabs,
+#main .logbar-wiki .wiki.logbar-container .navbar-nav.nav-tabs {
   margin: 0px;
 }
 
@@ -1780,11 +1781,11 @@ h4.ajaxError {
   margin: 10px;
 }
 
-div#main div ul.nav li a.nav-primary.active {
+div#main div ul.navbar-nav li a.nav-primary.active {
   color: rgba(255, 255, 255, 0.75);
 }
 
-div#main div ul.nav li a.nav-primary {
+div#main div ul.navbar-nav li a.nav-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #006dcc;
@@ -1803,22 +1804,22 @@ div#main div ul.nav li a.nav-primary {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
-div#main div ul.nav li a.nav-primary:hover,
-div#main div ul.nav li a.nav-primary:active,
-div#main div ul.nav li a.nav-primary.active,
-div#main div ul.nav li a.nav-primary.disabled,
-div#main div ul.nav li a.nav-primary[disabled] {
+div#main div ul.navbar-nav li a.nav-primary:hover,
+div#main div ul.navbar-nav li a.nav-primary:active,
+div#main div ul.navbar-nav li a.nav-primary.active,
+div#main div ul.navbar-nav li a.nav-primary.disabled,
+div#main div ul.navbar-nav li a.nav-primary[disabled] {
   color: #ffffff;
   background-color: #0044cc;
   *background-color: #003bb3;
 }
 
-div#main div ul.nav li a.nav-primary:active,
-div#main div ul.nav li a.nav-primary.active {
+div#main div ul.navbar-nav li a.nav-primary:active,
+div#main div ul.navbar-nav li a.nav-primary.active {
   background-color: #003399 \9;
 }
 
-.nav.nav-tabs li a[disabled] {
+.navbar-nav.nav-tabs li a[disabled] {
   cursor: not-allowed;
   opacity: 0.3;
 }
@@ -1827,7 +1828,7 @@ div#main div ul.nav li a.nav-primary.active {
   width: 9px;
 }
 
-div#main div ul.nav li a.nav-primary .caret {
+div#main div ul.navbar-nav li a.nav-primary .caret {
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
 }
@@ -1867,13 +1868,31 @@ div#main div ul.nav li a.nav-primary .caret {
   border: none;
 }
 
-.main-nav-lower .container ul.nav {
+.main-nav-lower .container ul.navbar-nav {
   width: 100%;
 }
 
 .navbar-inner {
   height: auto;
   min-height: 0;
+  box-shadow: 0 1px 10px rgba(0,0,0,.1);
+  border-radius: 0;
+  background-color: #fafafa;
+  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  background-repeat: repeat-x;
+  border: 1px solid #d4d4d4;
+  border-width: 0 0 1px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar-inner:before,
+.navbar-inner:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.navbar-inner:after {
+  clear: both;
 }
 
 .main-nav-upper {
@@ -1890,7 +1909,7 @@ div#main div ul.nav li a.nav-primary .caret {
   margin-left: 20px;
 }
 
-.main-nav-upper .nav li a {
+.main-nav-upper .navbar-nav li a {
   padding-top: 2px;
   padding-bottom: 5px;
 }
@@ -1907,7 +1926,7 @@ dd.file-list {
   margin-left: 0;
 }
 
-.file-list-toolbar .nav .caption {
+.file-list-toolbar .navbar-nav .caption {
   font-weight: bold;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -3222,15 +3241,15 @@ tabset > .tabbable > ul {
 }
 /* end hack */
 
-tabset > .tabbable > .tab-content > .nav.nav-tabs > li {
+tabset > .tabbable > .tab-content > .navbar-nav.nav-tabs > li {
   cursor: pointer;
 }
 
-tabset > .tabbable > .tab-content > .nav.nav-tabs > li.active {
+tabset > .tabbable > .tab-content > .navbar-nav.nav-tabs > li.active {
   cursor: pointer;
 }
 
-tabset > .tabbable > .tab-content > .nav.nav-tabs > li.disabled {
+tabset > .tabbable > .tab-content > .navbar-nav.nav-tabs > li.disabled {
   opacity: 0.3;
 }
 
@@ -3461,7 +3480,7 @@ strong.new,
   content: "\f078";
 }
 
-.camel-tree > ul.nav {
+.camel-tree > ul.navbar-nav {
   margin-bottom: 3px !important;
 }
 
@@ -3534,7 +3553,7 @@ th > .indicator:before {
 
 .main-nav-upper .dropdown-menu {
   border-top: none;
-  margin-top: -1;
+  margin-top: -1px;
   border-radius: 0;
 }
 
@@ -3582,7 +3601,7 @@ th > .indicator:before {
   display: none !important;
 }
 
-.nav.nav-tabs li .hawtio-dropdown .dropdown-menu {
+.navbar-nav.nav-tabs li .hawtio-dropdown .dropdown-menu {
   margin-top: 4px;
   border-top: none;
 }
@@ -3936,7 +3955,7 @@ img.nodeIcon:hover {
     display: none !important;
   }
 
-  .logbar-container > .nav {
+  .logbar-container > .navbar-nav {
     display: none !important;
     height: 0 !important;
   }
@@ -3979,7 +3998,7 @@ img.nodeIcon:hover {
   margin: 0 !important;
 }
 
-.slideout-body .prefs .nav.nav-tabs {
+.slideout-body .prefs .navbar-nav.nav-tabs {
   top: 5px;
   bottom: 5px;
   left: 0;
@@ -3989,12 +4008,12 @@ img.nodeIcon:hover {
   overflow-y: auto;
 }
 
-.slideout-body .prefs .nav.nav-tabs:after,
-.slideout-body .prefs .nav.nav-tabs:before {
+.slideout-body .prefs .navbar-nav.nav-tabs:after,
+.slideout-body .prefs .navbar-nav.nav-tabs:before {
   display: none;
 }
 
-.slideout-body .prefs .nav.nav-tabs li {
+.slideout-body .prefs .navbar-nav.nav-tabs li {
   display: block;
   float: none;
 }
@@ -4305,4 +4324,9 @@ ul.dynatree-container {
 
 .dataTables_filter input {
     border-radius: 15px
+}
+
+/* compatibility with bootstrap 2.x */
+li {
+  line-height: 20px;
 }

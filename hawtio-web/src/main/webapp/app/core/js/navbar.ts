@@ -209,6 +209,7 @@ module Core {
         Core.$apply($scope);
       }
     }
+
   }]);
 
 }
