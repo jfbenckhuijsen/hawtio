@@ -296,7 +296,7 @@ module Log {
       if (!exception) {
         return "";
       }
-      var answer = '<ul class="unstyled">\n';
+      var answer = '<ul class="list-unstyled">\n';
       exception.forEach((line) => {
         answer = answer + '<li>' + $scope.formatException(line) + '</li>';
       });

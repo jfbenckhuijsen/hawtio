@@ -4306,3 +4306,23 @@ ul.dynatree-container {
 .dataTables_filter input {
     border-radius: 15px
 }
+
+/* bootstrap 2.x -> 3.x compatibility */
+
+.navbar-inner {
+  box-shadow: 0 1px 10px rgba(0,0,0,.1);
+  padding: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #d4d4d4;
+  margin: 0;
+}
+.dropdown-toggle > .caret {
+  margin-top: -7px;
+}
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+body div div ul.nav {
+  margin: 0;
+}

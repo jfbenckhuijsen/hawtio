@@ -131,7 +131,7 @@ module Core {
   export function adjustHeight() {
     var windowHeight = $(window).height();
     var headerHeight = $("#main-nav").height();
-    var containerHeight = windowHeight - headerHeight;
+    var containerHeight = windowHeight - headerHeight - 1;
     $("#main").css("min-height", "" + containerHeight + "px");
   }
 

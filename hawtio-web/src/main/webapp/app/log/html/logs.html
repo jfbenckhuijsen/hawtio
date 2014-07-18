@@ -190,7 +190,7 @@
     <dl ng-hide="!row.exception">
       <dt>Stack Trace:</dt>
       <dd>
-        <ul class="unstyled" ng-repeat="line in row.exception">
+        <ul class="list-unstyled" ng-repeat="line in row.exception">
 
           <li class="stacktrace" ng-bind-html="formatException(line)"></li>
         </ul>

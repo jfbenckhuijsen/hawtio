@@ -48,7 +48,7 @@
 
       <div class="col-md-3">
 
-        <ul class="unstyled switches">
+        <ul class="list-unstyled switches">
           <li>
             <div class="switch-container" title="Abstract profiles cannot be directly instantiated; they must be inherited by other profiles.
 
@@ -81,7 +81,7 @@ So they are for implementation inheritance rather like Abstract Base Classes in 
         <dl>
           <dt>Parents:</dt>
           <dd>
-            <ul class="unstyled">
+            <ul class="list-unstyled">
               <li ng-repeat="profile in row.parentIds">
                 <i class="red clickable icon-remove" title="Remove parent {{profile}}" ng-click="removeParentProfile(profile)"></i>
                 <a href="#/wiki/branch/{{versionId}}/view/fabric/profiles/{{profilePath(profile)}}{{hash}}">{{profile}}</a>
@@ -95,7 +95,7 @@ So they are for implementation inheritance rather like Abstract Base Classes in 
         <dl ng-show="row.childIds.length > 0">
           <dt>Children:</dt>
           <dd>
-            <ul class="unstyled">
+            <ul class="list-unstyled">
               <li ng-repeat="profile in row.childIds">
                 <a href="#/wiki/branch/{{versionId}}/view/fabric/profiles/{{profilePath(profile)}}{{hash}}">{{profile}}</a>
               </li>
@@ -110,7 +110,7 @@ So they are for implementation inheritance rather like Abstract Base Classes in 
         <div class="tabbable hawtio-form-tabs" ng-model="activeTab">
 
           <div class="tab-pane" value="features" title="Features ({{row.features.length}})">
-            <ul class="unstyled">
+            <ul class="list-unstyled">
               <li ng-repeat="feature in row.features">
                 <i class="red clickable icon-remove" title="Delete {{feature}}" ng-click="deleteThing('Feature', 'Features', row.features, feature)"></i>
                 <editable-property ng-model="row.features" property="$index" on-save="updateThing('Feature', 'Features',  row.features)"></editable-property>
@@ -123,7 +123,7 @@ So they are for implementation inheritance rather like Abstract Base Classes in 
 
 
           <div class="tab-pane" value="repos" title="Feature Repositories ({{row.repositories.length}})">
-            <ul class="unstyled">
+            <ul class="list-unstyled">
               <li ng-repeat="repository in row.repositories">
                 <i class="red clickable icon-remove" title="Delete {{repository}}" ng-click="deleteThing('Feature Repository', 'Repositories', row.repositories, repository)"></i>
                 <editable-property ng-model="row.repositories" property="$index" on-save="updateThing('Feature Repository', 'Repositories',  row.repositories)"></editable-property>
@@ -142,7 +142,7 @@ So they are for implementation inheritance rather like Abstract Base Classes in 
           </div>
 
           <div class="tab-pane" value="bundles" title="Bundles ({{row.bundles.length}})">
-            <ul class="unstyled">
+            <ul class="list-unstyled">
               <li ng-repeat="bundle in row.bundles">
                 <i class="red clickable icon-remove" title="Delete {{bundle}}" ng-click="deleteThing('Bundle', 'Bundles', row.bundles, bundle)"></i>
                 <a ng-href="{{mavenLink(bundle)}}">
@@ -163,7 +163,7 @@ So they are for implementation inheritance rather like Abstract Base Classes in 
           </div>
 
           <div class="tab-pane" value="fabs" title="FABs ({{row.fabs.length}})">
-            <ul class="unstyled">
+            <ul class="list-unstyled">
               <li ng-repeat="fab in row.fabs">
                 <i class="red clickable icon-remove" title="Delete {{fab}}" ng-click="deleteThing('Fuse Application Bundle', 'Fabs', row.fabs, fab)"></i>
                 <editable-property ng-model="row.fabs" property="$index" on-save="updateThing('Fuse Application Bundle', 'Fabs',  row.fabs)"></editable-property>

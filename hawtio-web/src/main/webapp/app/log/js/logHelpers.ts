@@ -91,7 +91,7 @@ module Log {
       return "";
     }
 
-    var answer = '<ul class="unstyled">\n';
+    var answer = '<ul class="list-unstyled">\n';
     exception.each((line) => {
       answer += "<li>" + Log.formatStackLine(line) + "</li>\n"
     });

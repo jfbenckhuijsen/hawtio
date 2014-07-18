@@ -30,7 +30,7 @@
 
     <div class="row-fluid profile-details">
       <div class="col-md-2">
-        <ul class="unstyled">
+        <ul class="list-unstyled">
           <li>
             <strong>Abstract:</strong> {{row.abstractProfile}}
           </li>
@@ -41,7 +41,7 @@
         <dl ng-show="row.parentIds.length > 0">
           <dt>Parents:</dt>
           <dd>
-            <ul class="unstyled">
+            <ul class="list-unstyled">
               <li ng-repeat="profile in row.parentIds">
                 <i class="red clickable icon-remove" title="Remove parent {{profile}}" ng-click="removeParentProfile(profile)"></i>
                 <a href="#/wiki/branch/{{versionId}}/view/fabric/profiles/{{profilePath(profile)}}{{hash}}">{{profile}}</a>
@@ -54,7 +54,7 @@
         <dl ng-show="row.childIds.length > 0">
           <dt>Children:</dt>
           <dd>
-            <ul class="unstyled">
+            <ul class="list-unstyled">
               <li ng-repeat="profile in row.childIds">
                 <a href="#/wiki/branch/{{versionId}}/view/fabric/profiles/{{profilePath(profile)}}{{hash}}">{{profile}}</a>
               </li>
@@ -66,7 +66,7 @@
         <dl>
           <dt>Features ({{row.features.length}}):</dt>
           <dd>
-            <ul class="unstyled">
+            <ul class="list-unstyled">
               <li ng-repeat="feature in row.features">
                 <i class="red clickable icon-remove" title="Delete {{feature}}" ng-click="deleteThing('Feature', 'Features', row.features, feature)"></i>
                 <editable-property ng-model="row.features" property="$index" on-save="updateThing('Feature', 'Features',  row.features)"></editable-property>
@@ -80,7 +80,7 @@
         <dl>
           <dt>Fuse Application Bundles ({{row.fabs.length}}):</dt>
           <dd>
-            <ul class="unstyled">
+            <ul class="list-unstyled">
               <li ng-repeat="fab in row.fabs">
                 <i class="red clickable icon-remove" title="Delete {{fab}}" ng-click="deleteThing('Fuse Application Bundle', 'Fabs', row.fabs, fab)"></i>
                 <editable-property ng-model="row.fabs" property="$index" on-save="updateThing('Fuse Application Bundle', 'Fabs',  row.fabs)"></editable-property>
@@ -95,7 +95,7 @@
         <dl>
           <dt>Bundles ({{row.bundles.length}}):</dt>
           <dd>
-            <ul class="unstyled">
+            <ul class="list-unstyled">
               <li ng-repeat="bundle in row.bundles">
                 <i class="red clickable icon-remove" title="Delete {{bundle}}" ng-click="deleteThing('Bundle', 'Bundles', row.bundles, bundle)"></i>
                 <editable-property ng-model="row.bundles" property="$index" on-save="updateThing('Bundle', 'Bundles',  row.bundles)"></editable-property>
@@ -111,7 +111,7 @@
         <dl>
           <dt>Feature Repositories ({{row.repositories.length}}):</dt>
           <dd>
-            <ul class="unstyled">
+            <ul class="list-unstyled">
               <li ng-repeat="repository in row.repositories">
                 <i class="red clickable icon-remove" title="Delete {{repository}}" ng-click="deleteThing('Feature Repository', 'Repositories', row.repositories, repository)"></i>
                 <editable-property ng-model="row.repositories" property="$index" on-save="updateThing('Feature Repository', 'Repositories',  row.repositories)"></editable-property>
@@ -128,7 +128,7 @@
             Configuration Files ({{row.configurations.length}})
           </dt>
           <dd ng-hide="configFolderLink">
-            <ul class="unstyled">
+            <ul class="list-unstyled">
               <li ng-repeat="configuration in row.configurations">
                 <i ng-click="deleteFile(configuration)" title="Delete {{configuration}}" class="clickable red icon-remove"></i>
                 <a href="#/fabric/profile/{{versionId}}/{{profileId}}/{{configuration}}">{{configuration}}</a>
