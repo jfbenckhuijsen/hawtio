@@ -645,7 +645,7 @@ angular.module('ui.bootstrap.carousel', ['ui.bootstrap.transition'])
       </div>
     </slide>
   </carousel>
-  <div class="row-fluid">
+  <div class="row">
     <div class="span6">
       <ul>
         <li ng-repeat="slide in slides">

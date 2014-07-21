@@ -1,5 +1,5 @@
 <div class="controller-section" ng-controller="Maven.ArtifactController">
-  <div class="row-fluid">
+  <div class="row">
     <div class="pull-right">
       <a class="btn" href="{{versionsLink(row)}}">Versions</a>
       <a class="btn" href="{{dependenciesLink(row)}}" ng-show="{{hasDependencyMBean()}}">Dependencies</a>
@@ -16,7 +16,7 @@
       </p>
     </div>
   </div>
-  <div class="row-fluid">
+  <div class="row">
     <div title="Description" class="title">
       <i class="expandable-indicator"></i> pom.xml
     </div>

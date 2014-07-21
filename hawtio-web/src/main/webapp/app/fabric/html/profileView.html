@@ -1,18 +1,18 @@
-<div class="row-fluid" ng-controller="Fabric.AppViewController">
+<div class="row" ng-controller="Fabric.AppViewController">
 
   <div>
-    <div class="row-fluid">
+    <div class="row">
       <div class="col-md-12">
-        <div class="row-fluid">
+        <div class="row">
           <p></p>
           <div class="col-md-12 centered">
             <div fabric-version-selector="selectedVersion"></div>
           </div>
         </div>
-        <div class="row-fluid centered" ng-show="profiles.length == 0">
+        <div class="row centered" ng-show="profiles.length == 0">
           <i class="icon-spinner icon-spin"></i>
         </div>
-        <div class="row-fluid" ng-hide="profiles.length == 0">
+        <div class="row" ng-hide="profiles.length == 0">
           <div hawtio-auto-columns=".column-box">
             <div class="column-box" 
                 ng-repeat="profile in profiles" 
@@ -26,7 +26,7 @@
 
     <script type="text/ng-template" id="headerTemplate.html">
       <div class="tree-header fabric-app-view-header" ng-controller="Fabric.AppViewPaneHeaderController">
-        <div class="row-fluid">
+        <div class="row">
           <div class="col-md-12 centered">
             <p></p>
             <hawtio-filter ng-model="filter"
@@ -34,7 +34,7 @@
                            save-as="fabric-appview-text-filter"></hawtio-filter>
           </div>
         </div>
-        <div class="row-fluid">
+        <div class="row">
           <p></p>
           <div class="pull-left">
             <div class="alert alert-info">
@@ -68,7 +68,7 @@
 
 
     <hawtio-pane position="right" header="headerTemplate.html">
-      <div class="row-fluid">
+      <div class="row">
         <div class="col-md-12">
           <p></p>
           <hawtio-tag-filter tags="tags"

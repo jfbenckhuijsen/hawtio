@@ -1,6 +1,6 @@
 <div ng-controller='Forms.FormTestController'>
 
-  <div class="row-fluid">
+  <div class="row">
     <h3>Basic form</h3>
     <p>Here's a basic form generated from some JSON schema</p>
 
@@ -51,7 +51,7 @@
   <h3>Form Testing</h3>
 
   <div>
-    <div class="control-group">
+    <div class="form-group">
       <a class='btn' ng-href="" hawtio-submit='form-with-inline-arguments'><i class="icon-save"></i> Save</a>
       <a class='btn' ng-href="" hawtio-reset='form-with-inline-arguments'><i class="icon-refresh"></i> Clear</a>
     </div>
@@ -63,7 +63,7 @@
 
   <div>
     Read Only Form with config object
-    <div class="row-fluid">
+    <div class="row">
       <button class="btn" ng-click="toggleEdit()">Edit</button>
     </div>
     <div simple-form data='setVMOption' entity='cheese' mode='view'></div>

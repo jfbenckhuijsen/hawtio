@@ -1,6 +1,6 @@
 <div ng-controller="Camel.EndpointController">
   <form class="form-horizontal">
-    <div class="control-group">
+    <div class="form-group">
       <label class="control-label" for="componentName">Component</label>
 
       <div class="controls">
@@ -9,7 +9,7 @@
       </div>
     </div>
     <div ng-show="selectedComponentName">
-      <div class="control-group">
+      <div class="form-group">
         <label class="control-label" for="endpointPath">Endpoint</label>
 
         <div class="controls">
@@ -21,7 +21,7 @@
 
       <div simple-form name="formEditor" entity='endpointParameters' data='endpointSchema' schema="schema"></div>
 
-      <div class="control-group">
+      <div class="form-group">
         <div class="controls">
           <button type="submit" class="btn btn-info" ng-click="createEndpointFromData()"
                   ng-disabled="!endpointPath || !selectedComponentName">

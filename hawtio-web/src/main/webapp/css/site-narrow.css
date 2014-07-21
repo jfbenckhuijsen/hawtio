@@ -72,7 +72,7 @@ div#main div ul.nav li a:hover {
   color: #333333;
   text-shadow: 0 1px 0 #FFFFFF;
 }
-div#main div.row-fluid div.span3 ul#tree-ctrl li {
+div#main div.row div.span3 ul#tree-ctrl li {
   margin-top: 0px;
   margin-bottom: 0px;
   text-align: center;

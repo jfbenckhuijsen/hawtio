@@ -90,8 +90,8 @@ module Core {
     $scope.pageTitle = [];
     $scope.userDetails = userDetails;
 
-    $scope.confirmLogout = false;
-    $scope.connectionFailed = false;
+    $scope.confirmLogout = new UI.Dialog();
+    $scope.connectionFailed = new UI.Dialog();
     $scope.connectFailure = {};
 
     $scope.showPrefs = false;
@@ -123,9 +123,13 @@ module Core {
 
     $scope.$watch('jolokiaStatus.xhr', function () {
       var failure = jolokiaStatus.xhr;
-      $scope.connectionFailed = failure ? true : false;
+      if (failure) {
+        $scope.connectionFailed.open();
+      } else {
+        $scope.connectionFailed.close();
+      }
       $scope.connectFailure.summaryMessage = null;
-      if ($scope.connectionFailed) {
+      if (failure) {
         $scope.connectFailure.status = failure.status;
         $scope.connectFailure.statusText = failure.statusText;
         var text = failure.responseText;
@@ -209,7 +213,7 @@ module Core {
     };
 
     $scope.logout = () => {
-      $scope.confirmLogout = true;
+      $scope.confirmLogout.open();
     };
 
     $scope.getUsername = () => {
@@ -221,7 +225,7 @@ module Core {
     };
 
     $scope.doLogout = () => {
-      $scope.confirmLogout = false;
+      $scope.confirmLogout.close();
       Core.logout(jolokiaUrl, userDetails, localStorage, $scope);
     };
 

@@ -1,8 +1,8 @@
-<div class="row-fluid controller-section" ng-controller="Insight.ElasticSearchController">
-    <div class="row-fluid">
+<div class="row controller-section" ng-controller="Insight.ElasticSearchController">
+    <div class="row">
         <form class="form-inline no-bottom-margin">
             <fieldset>
-                <div class="control-group inline-block">
+                <div class="form-group inline-block">
                     <div class="btn-group">
                         <button class="btn" ng-repeat='t in time_options' ng-class="{'btn-success': (t == timespan)}" ng-click="set_timespan(t)">{{t}}</button>
                     </div>
@@ -10,7 +10,7 @@
             </fieldset>
         </form>
     </div>
-    <div class="row-fluid">
+    <div class="row">
         <div id="charts"></div>
     </div>
 </div>

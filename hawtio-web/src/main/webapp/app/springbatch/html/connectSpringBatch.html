@@ -2,9 +2,9 @@
 <div ng-controller="SpringBatch.ConnectSpringBatchController">
 
     <div class="container-fluid">
-        <div class="row-fluid">
+        <div class="row">
             <form class="form-horizontal">
-                <div class="control-group">
+                <div class="form-group">
                     <label class="control-label" for="springBatchServer" title="List of all the Spring Batch servers available">SpringBatch servers</label>
 
                     <div class="controls">
@@ -22,7 +22,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="control-group">
+                <div class="form-group">
                     <div class="controls">
                         <input type="submit" value="Connect To Remote Server" ng-disabled="!selectedSpringBatchServer" class="btn" ng-click="connectSpringBatch()"
                                title="Select the spring batch server to use">
@@ -34,30 +34,30 @@
     <br/>
     <br/>
     <div class="container-fluid">
-        <div class="row-fluid">
+        <div class="row">
             <form class="form-horizontal">
-                <div class="control-group">
+                <div class="form-group">
                     <label class="control-label" for="host" title="The host name used to connect over HTTP">Host name</label>
 
                     <div class="controls">
                         <input id="host" name="host" type="text" ng-model="host"/>
                     </div>
                 </div>
-                <div class="control-group">
+                <div class="form-group">
                     <label class="control-label" for="port" title="The HTTP port used to connect to the server">Port</label>
 
                     <div class="controls">
                         <input id="port" name="port" type="number" min="0" ng-model="port"/>
                     </div>
                 </div>
-                <div class="control-group">
+                <div class="form-group">
                     <label class="control-label" for="path" title="The URL path used to connect to Jolokia on the remote server">Path</label>
 
                     <div class="controls">
                         <input id="path" name="path" type="text" ng-model="path"/>
                     </div>
                 </div>
-                <div class="control-group">
+                <div class="form-group">
                     <div class="controls">
                         <input type="submit" value="Add to the list" class="btn" ng-disabled="!host" ng-click="addSpringBatchServerToGlobalList()"
                                title="Add new SpringBatch server to the global list">

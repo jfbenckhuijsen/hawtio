@@ -3,7 +3,7 @@
     Please wait, loading profile details...
   </div>
   <div ng-hide="loading">
-    <div class="fabric-page-header row-fluid">
+    <div class="fabric-page-header row">
       <div class="pull-left">
         <h2 class="inline">Profile: {{row.id}}</h2>
         &nbsp;
@@ -28,7 +28,7 @@
       </div>
     </div>
 
-    <div class="row-fluid profile-details">
+    <div class="row profile-details">
       <div class="col-md-2">
         <ul class="list-unstyled">
           <li>
@@ -134,7 +134,7 @@
                 <a href="#/fabric/profile/{{versionId}}/{{profileId}}/{{configuration}}">{{configuration}}</a>
               </li>
               <li>
-                <i class="clickable icon-plus" ng-click="newFileDialog = true" title="Create new configuration file"></i>
+                <i class="clickable icon-plus" ng-click="newFileDialog.open()" title="Create new configuration file"></i>
               </li>
             </ul>
           </dd>
@@ -191,7 +191,7 @@
     </div>
   </div>
 
-  <div modal="newFileDialog">
+  <div modal="newFileDialog.show">
     <form name="newFile" class="form-horizontal no-bottom-margin" ng-submit="doCreateFile()">
       <div class="modal-header"><h4>Create new configuration file...</h4></div>
       <div class="modal-body">
@@ -203,7 +203,7 @@
       </div>
       <div class="modal-footer">
         <input class="btn btn-success" ng-disabled="!newFile.$valid" type="submit" value="Create">
-        <input class="btn btn-primary" ng-click="newFileDialog = false" type="button" value="Cancel">
+        <input class="btn btn-primary" ng-click="newFileDialog.close()" type="button" value="Cancel">
       </div>
     </form>
   </div>

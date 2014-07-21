@@ -3,7 +3,7 @@
     <ng-include src="'app/camel/html/breadcrumbBar.html'"></ng-include>
   </div>
   <div ng-class="{'wiki-fixed' : !isJmxTab}">
-    <div class="row-fluid">
+    <div class="row">
       <div class="col-md-6">
         <input class="search-query col-md-12" type="text" ng-model="gridOptions.filterOptions.filterText"
                placeholder="Filter messages">
@@ -25,14 +25,14 @@
     </div>
 
 
-    <div class="row-fluid">
+    <div class="row">
       <div class="gridStyle" ng-grid="gridOptions"></div>
     </div>
 
     <div hawtio-slideout="showMessageDetails" title="{{row.id}}">
       <div class="dialog-body">
 
-        <div class="row-fluid">
+        <div class="row">
           <div class="pull-right">
             <form class="form-horizontal no-bottom-margin">
               <div class="btn-group" hawtio-pager="messages" on-index-change="selectRowIndex"
@@ -48,7 +48,7 @@
           </div>
         </div>
 
-        <div class="row-fluid">
+        <div class="row">
           <div class="expandable closed">
             <div title="Headers" class="title">
               <i class="expandable-indicator"></i> Headers
@@ -67,7 +67,7 @@
             </div>
           </div>
 
-          <div class="row-fluid">
+          <div class="row">
             <div hawtio-editor="row.body" read-only="true" mode="mode"></div>
           </div>
 

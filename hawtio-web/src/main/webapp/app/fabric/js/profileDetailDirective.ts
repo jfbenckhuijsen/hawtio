@@ -30,7 +30,7 @@ module Fabric {
         $scope.profileId = $routeParams.profileId;
       }
 
-      $scope.newFileDialog = false;
+      $scope.newFileDialog = new UI.Dialog();
       $scope.deleteFileDialog = false;
       $scope.newFileName = '';
       $scope.markedForDeletion = '';
@@ -347,7 +347,7 @@ module Fabric {
       };
 
       $scope.doCreateFile = () => {
-        $scope.newFileDialog = false;
+        $scope.newFileDialog.close();
         newConfigFile(jolokia, $scope.versionId, $scope.profileId, $scope.newFileName, () => {
           Core.notification('success', 'Created new configuration file ' + $scope.newFileName);
           $location.path("/fabric/profile/" + $scope.versionId + "/" + $scope.profileId + "/" + $scope.newFileName);

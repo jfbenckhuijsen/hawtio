@@ -1,7 +1,7 @@
 <script type="text/ng-template" id="widgetTemplate">
   <div class="widget-area" data-widgetId="{{widget.id}}">
     <div class="widget-title">
-      <div class="row-fluid">
+      <div class="row">
         <div class="pull-left">
           <editable-property ng-model="widget" property="title" on-save="onWidgetRenamed(widget)"></editable-property>
         </div>
@@ -23,7 +23,7 @@
 </div>
 -->
 
-<div class="row-fluid">
+<div class="row">
   <div class="col-md-12 gridster">
     <ul id="widgets" hawtio-dashboard></ul>
   </div>

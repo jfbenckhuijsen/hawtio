@@ -12,10 +12,10 @@
     </div>
   </div>
 
-  <div class="wiki-fixed row-fluid">
+  <div class="wiki-fixed row">
     <p></p>
     <p></p>
-    <div class="control-group inline-block">
+    <div class="form-group inline-block">
       <input class="search-query input-xxlarge" type="text" ng-model="searchText" placeholder="Filter files...">
     </div>
     <table>
@@ -25,7 +25,7 @@
     </table>
   </div>
 
-  <div class="wiki-fixed row-fluid" ng-show="loadingMessage">
+  <div class="wiki-fixed row" ng-show="loadingMessage">
     <div class="alert alert-info">
       <i class="icon-spinner icon-spin icon-2x"></i>
       <span ng-bind-html="loadingMessage"></span>

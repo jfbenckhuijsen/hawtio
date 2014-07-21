@@ -1,6 +1,6 @@
 <div class="controller-section" ng-controller="Fabric.CreateContainerController">
 
-  <div class="fabric-page-header row-fluid">
+  <div class="fabric-page-header row">
     <h2 class="inline-block">Create New Container</h2>
   </div>
 
@@ -67,14 +67,14 @@
 
     <div class="create-column align-left"
          ng-hide="hideProfileSelector">
-      <div class="control-group">
+      <div class="form-group">
         <form class="form-inline">
           <label class="control-label">Version: </label>
           <div fabric-version-selector='selectedVersion'></div>
         </form>
       </div>
 
-      <div class="control-group">
+      <div class="form-group">
         <label class="control-label">Profiles: </label>
         <div class="controls">
           <div fabric-profile-selector='selectedProfiles'

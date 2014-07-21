@@ -76,12 +76,12 @@
     <div modal="addDialog.show" close="addDialog.close()" ng-options="addDialog.options">
       <div class="modal-header"><h4>Create Document</h4></div>
       <div class="modal-body">
-        <div class="control-group">
+        <div class="form-group">
           <div hawtio-tree="createDocumentTree" hideRoot="true" onSelect="onCreateDocumentSelect"
                activateNodes="createDocumentTreeActivations"></div>
         </div>
 
-        <div class="control-group">
+        <div class="form-group">
           <div class="well">
             {{selectedCreateDocumentTemplate.tooltip}}
           </div>
@@ -94,7 +94,7 @@
                  placeholder="{{selectedCreateDocumentTemplate.exemplar}}"/>
         </form>
 
-        <div class="control-group">
+        <div class="form-group">
           <div ng-show="fileExists.exists" class="alert">
             Please choose a different name as <b>{{fileExists.name}}</b> already exists
           </div>
@@ -126,7 +126,7 @@
     <form class="form-horizontal" ng-submit="moveAndCloseDialog()">
       <div class="modal-header"><h4>Move Document</h4></div>
       <div class="modal-body">
-        <div class="control-group">
+        <div class="form-group">
           <label class="control-label" for="moveFolder">Folder</label>
 
           <div class="controls">
@@ -148,7 +148,7 @@
     <form class="form-horizontal" ng-submit="renameAndCloseDialog()">
       <div class="modal-header"><h4>Rename Document</h4></div>
       <div class="modal-body">
-        <div class="control-group">
+        <div class="form-group">
           <label class="control-label" for="renameFileName">Name</label>
 
           <div class="controls">
@@ -156,7 +156,7 @@
           </div>
         </div>
 
-        <div class="control-group">
+        <div class="form-group">
           <div ng-show="fileExists.exists" class="alert">
             Please choose a different name as <b>{{fileExists.name}}</b> already exists
           </div>

@@ -20,7 +20,7 @@ module Forms {
     // the name of the full schema
     public schemaName = "schema";
 
-    public controlgroupclass = 'control-group';
+    public controlgroupclass = 'form-group';
     public controlclass = 'controls';
     public labelclass = 'control-label';
     public showtypes = 'false';

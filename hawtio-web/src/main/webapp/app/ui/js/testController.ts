@@ -252,13 +252,13 @@ module UI {
 
     $scope.editorEx1 = '' +
         'Instance 1\n' +
-        '<div class="row-fluid">\n' +
+        '<div class="row">\n' +
         '   <div hawtio-editor="someText" mode="mode" dirty="dirty"></div>\n' +
         '   <div>Text : {{someText}}</div>\n' +
         '</div>\n' +
         '\n' +
         'Instance 2 (readonly)\n' +
-        '<div class="row-fluid">\n' +
+        '<div class="row">\n' +
         '   <div hawtio-editor="someText" read-only="true" mode="mode" dirty="dirty"></div>\n' +
         '   <div>Text : {{someText}}</div>\n' +
         '</div>';

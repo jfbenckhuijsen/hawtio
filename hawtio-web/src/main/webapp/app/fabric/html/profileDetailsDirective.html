@@ -3,7 +3,7 @@
     Please wait, loading profile details...
   </div>
   <div ng-hide="loading">
-    <div class="fabric-page-header row-fluid">
+    <div class="fabric-page-header row">
 
       <div class="pull-left">
         <div class="app-logo">
@@ -28,7 +28,7 @@
       </div>
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
       <div class="pull-left">
         <div ng-show="row.containerCount === 0">
           Not assigned to any containers
@@ -44,7 +44,7 @@
       </div>
     </div>
 
-    <div class="row-fluid profile-details">
+    <div class="row profile-details">
 
       <div class="col-md-3">
 
@@ -229,7 +229,7 @@ So they are for implementation inheritance rather like Abstract Base Classes in 
     </div>
   </div>
 
-  <div modal="newFileDialog">
+  <div modal="newFileDialog.show">
     <form name="newFile" class="form-horizontal no-bottom-margin" ng-submit="doCreateFile()">
       <div class="modal-header"><h4>Create new configuration file...</h4></div>
       <div class="modal-body">
@@ -241,7 +241,7 @@ So they are for implementation inheritance rather like Abstract Base Classes in 
       </div>
       <div class="modal-footer">
         <input class="btn btn-success" ng-disabled="!newFile.$valid" type="submit" value="Create">
-        <input class="btn btn-primary" ng-click="newFileDialog = false" type="button" value="Cancel">
+        <input class="btn btn-primary" ng-click="newFileDialog.close()" type="button" value="Cancel">
       </div>
     </form>
   </div>

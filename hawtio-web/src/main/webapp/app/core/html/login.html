@@ -11,20 +11,20 @@
                  ng-class="branding.logoClass()">
             <span ng-show="branding.appName && !branding.logoOnly">{{branding.appName}}</span>
           </div>
-          <div class="control-group">
+          <div class="form-group">
             <label class="control-label" for="username">Username </label>
             <div class="controls">
               <input id="username" type="text" class="input-medium" required ng-model="entity.username" autofill autofocus>
             </div>
           </div>
-          <div class="control-group">
+          <div class="form-group">
             <label class="control-label" for="password">Password </label>
             <div class="controls">
               <input id="password" type="password" class="input-medium" required ng-model="entity.password" autofill>
             </div>
           </div>
 
-          <div class="control-group">
+          <div class="form-group">
             <div class="controls">
               <label class="checkbox" for="rememberMe">
                 <input id="rememberMe" type="checkbox" ng-model="rememberMe"> Remember me

@@ -21,12 +21,12 @@
 
   <div ng-show="selectedSchedulerMBean">
 
-    <div class="row-fluid">
+    <div class="row">
 
       <div class="pull-right">
         <form class="form-inline no-bottom-margin">
           <fieldset>
-            <div class="controls control-group inline-block controls-row">
+            <div class="controls form-group inline-block controls-row">
               <div class="btn-group">
                 <button
                     ng-disabled="selectedScheduler.Started"
@@ -41,7 +41,7 @@
           </fieldset>
         </form>
       </div>
-      <div class="row-fluid">
+      <div class="row">
         <dl class="dl-horizontal">
           <dt>Scheduler name</dt>
           <dd>{{selectedScheduler.SchedulerName}}</dd>
@@ -57,7 +57,7 @@
       <div class="pull-right">
         <form class="form-inline no-bottom-margin">
           <fieldset>
-            <div class="controls control-group inline-block controls-row">
+            <div class="controls form-group inline-block controls-row">
               <div class="btn-group">
                 <button
                     ng-disabled="selectedScheduler.SampledStatisticsEnabled"

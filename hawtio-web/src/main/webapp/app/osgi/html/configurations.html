@@ -27,7 +27,7 @@
 </style>
 
 <div class="controller-section" ng-controller="Osgi.ConfigurationsController">
-  <div class="row-fluid">
+  <div class="row">
     <div class="configuration-header">
       <div class="configuration-filter">
         <input type="text" class="col-md-8 search-query" placeholder="Filter..." ng-model="filterText">
@@ -58,7 +58,7 @@
     <form name="addPidDialogForm" class="form-horizontal no-bottom-margin" ng-submit="addPid(newPid)">
       <div class="modal-header"><h4>Add New Configuration</h4></div>
       <div class="modal-body">
-        <div class="control-group">
+        <div class="form-group">
           <label class="control-label" for="newPid">New configuration ID</label>
 
           <div class="controls">

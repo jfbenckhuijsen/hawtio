@@ -367,7 +367,7 @@ ol.inline > li {
   margin-bottom: 0 !important;
 }
 
-.no-bottom-margin .control-group {
+.no-bottom-margin .form-group {
   margin-bottom: 4px;
 }
 
@@ -434,12 +434,12 @@ li.attr-column {
   cursor: move;
 }
 
-.widget-title > .row-fluid > .pull-right > i {
+.widget-title > .row > .pull-right > i {
   cursor: pointer;
   opacity: .25;
 }
 
-.widget-title > .row-fluid > .pull-right > i:hover {
+.widget-title > .row > .pull-right > i:hover {
   transition: opacity 0.25s ease-in-out;
   -moz-transition: opacity 0.25s ease-in-out;
   -webkit-transition: opacity 0.25s ease-in-out;
@@ -771,7 +771,7 @@ div#main div ul.nav li a:hover {
   margin-bottom: 5px;
 }
 
-.logbar-container .control-group {
+.logbar-container .form-group {
   margin-bottom: 5px;
 }
 
@@ -1628,12 +1628,12 @@ td.adding {
   width: 413px;
 }
 
-.login-form form fieldset .control-group {
+.login-form form fieldset .form-group {
   margin-bottom: 15px;
   margin-left: 5px;
 }
 
-.login-form form fieldset .control-group button[type='submit'] {
+.login-form form fieldset .form-group button[type='submit'] {
   float: right;
 }
 
@@ -1758,7 +1758,7 @@ div.stack-line {
   margin-bottom: 14px;
 }
 
-#container-create-form .control-group {
+#container-create-form .form-group {
   margin-bottom: 0px;
 }
 
@@ -2385,17 +2385,17 @@ a.dashboard-link:hover {
   min-width: 592px;
 }
 
-.widget-title > .row-fluid {
+.widget-title > .row {
   position: relative;
 }
 
-.widget-title > .row-fluid > .pull-left {
+.widget-title > .row > .pull-left {
   position: absolute;
   right: 16px;
   left: 0;
 }
 
-.widget-title > .row-fluid > .pull-left > .ep > div {
+.widget-title > .row > .pull-left > .ep > div {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -2662,11 +2662,11 @@ ol.zebra-list > li:before {
   padding-right: 5px;
 }
 
-.log-info-panel-body > .row-fluid {
+.log-info-panel-body > .row {
   margin-bottom: 10px;
 }
 
-.log-info-panel > .log-info-panel-frame > .log-info-panel-body > .row-fluid > span {
+.log-info-panel > .log-info-panel-frame > .log-info-panel-body > .row > span {
   margin-right: 7px;
   white-space: nowrap;
 }
@@ -2811,7 +2811,7 @@ i.expandable-indicator.folder {
     margin-right: 0 !important;
   }
 
-  .wiki-fixed .row-fluid .span9 {
+  .wiki-fixed .row .span9 {
     margin-left: 9px;
   }
 
@@ -3681,10 +3681,10 @@ span.hawtio-dropdown .dropdown-menu {
   top: -9px;
 }
 
-.modal {
+/*.modal {
   width: 660px;
   margin: -250px 0 0 -320px;
-}
+}*/
 
 .scrollable-section {
   overflow-x: hidden;
@@ -3924,11 +3924,11 @@ img.nodeIcon:hover {
     margin-top: 0 !important;
   }
 
-  .wiki-fixed > .row-fluid > .span3 {
+  .wiki-fixed > .row > .span3 {
     display: none;
   }
 
-  .wiki-fixed > .row-fluid > .span9 {
+  .wiki-fixed > .row > .span9 {
     width: 100%;
   }
 
@@ -4222,7 +4222,7 @@ ul.dynatree-container {
   margin-bottom: 0;
 }
 
-.fabric-app-view-header .row-fluid:last-child {
+.fabric-app-view-header .row:last-child {
   padding-bottom: 8px;
 }
 

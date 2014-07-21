@@ -1,13 +1,13 @@
 <div  id="threadForm" ng-controller="Jmx.OperationsController">
 
-  <div class="row-fluid" ng-show="isOperationsEmpty()">
+  <div class="row" ng-show="isOperationsEmpty()">
     The selected MBean has no JMX operations.
   </div>
 
-  <div class="row-fluid" ng-hide="isOperationsEmpty() || showInvoke">
+  <div class="row" ng-hide="isOperationsEmpty() || showInvoke">
     <form class="form-horizontal no-bottom-margin">
       <fieldset>
-        <div class="control-group">
+        <div class="form-group">
           <input type="text"
                  class="search-query col-md-12"
                  ng-model="methodFilter"
@@ -23,8 +23,8 @@
       <div ng-controller="Jmx.OperationController">
 
         <div ng-show="operationResult!=''">
-          <div class="row-fluid">
-            <div class="control-group pull-right">
+          <div class="row">
+            <div class="form-group pull-right">
               <div class="controls">
                 <button class="btn"
                         zero-clipboard
@@ -43,14 +43,14 @@
               </div>
             </div>
           </div>
-          <div class="row-fluid">
+          <div class="row">
             <div hawtio-editor="operationResult" mode="mode"></div>
           </div>
         </div>
 
         <div ng-show="operationResult==''">
-          <div class="row-fluid">
-            <div class="control-group pull-right">
+          <div class="row">
+            <div class="form-group pull-right">
               <div class="controls">
                 <button class="btn"
                         ng-click="reset()"

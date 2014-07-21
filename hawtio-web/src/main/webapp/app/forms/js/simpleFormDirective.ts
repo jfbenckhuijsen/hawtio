@@ -27,8 +27,8 @@ module Forms {
     public properties = [];
     public action = '';
 
-    public formclass = 'hawtio-form form-horizontal no-bottom-margin';
-    public controlgroupclass = 'control-group';
+    public formclass = 'hawtio-form form form-horizontal no-bottom-margin';
+    public controlgroupclass = 'form-group';
     public controlclass = 'controls';
     public labelclass = 'control-label';
 

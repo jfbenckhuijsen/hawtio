@@ -1,6 +1,6 @@
 <div ng-controller="JVM.ConnectController">
 
-  <div class="row-fluid connect-column-container" hawtio-auto-columns=".connect-column">
+  <div class="row connect-column-container" hawtio-auto-columns=".connect-column">
 
     <div class="connect-column">
       <div class="alert alert-info">
@@ -47,27 +47,16 @@
         <dd>
           <form class="form-horizontal no-bottom-margin">
             <fieldset>
-              <div class="control-group">
-                <label class="control-label">Connections: </label>
-                <div class="controls">
-                  <select ng-model="settings.lastConnection"
-                          ng-options="value.connectionName as key for (key, value) in connectionConfigs">
-                    <option value=""
-                            ng-hide="settings.lastConnection">New connection...</option>
+              <div class="form-group">
+                <label class="control-label col-md-4">Connections: </label>
+                <div class=" col-md-5">
+                  <select class="form-control" ng-model="settings.lastConnection" ng-options="value.connectionName as key for (key, value) in connectionConfigs">
+                    <option value="" ng-hide="settings.lastConnection">New connection...</option>
                   </select>
-                  <button class="btn btn-success"
-                          title="Connect to this server"
-                          ng-disabled="!settings.lastConnection"
-                          ng-click="gotoServer()"><i class="icon-share"></i></button>
-                  <button class="btn btn-danger"
-                          title="Delete this connection"
-                          ng-disabled="!settings.lastConnection"
-                          ng-click="deleteConnection()"><i class="icon-minus"></i></button>
-                  <button class="btn btn-primary"
-                          title="Create a new connection"
-                          ng-disabled="!settings.lastConnection"
-                          ng-click="newConnection()"><i class="icon-plus"></i></button>
                 </div>
+                  <button class="btn btn-success" title="Connect to this server" ng-disabled="!settings.lastConnection" ng-click="gotoServer()"> <i class="icon-share"></i></button>
+                  <button class="btn btn-danger" title="Delete this connection" ng-disabled="!settings.lastConnection" ng-click="deleteConnection()"><i class="icon-minus"></i></button>
+                  <button class="btn btn-primary" title="Create a new connection" ng-disabled="!settings.lastConnection" ng-click="newConnection()"><i class="icon-plus"></i></button>
               </div>
             </fieldset>
           </form>

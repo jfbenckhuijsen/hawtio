@@ -1,5 +1,5 @@
 <div class="controller-section" ng-controller="Fabric.ClusterController">
-  <div class="row-fluid">
+  <div class="row">
     <ul class="nav nav-tabs">
       <li ng-repeat="link in breadcrumbs" ng-class='{active : isTabActive(link.href)}'>
         <a ng-href="{{link.href}}{{hash}}" style="float: left">{{link.name}}</a><div ng-show="link.name != '/'" class="separator">/</div>
@@ -15,7 +15,7 @@
 
   <div class="wiki-fixed form-horizontal">
     <div ng-hide="!children.length">
-      <div class="row-fluid">
+      <div class="row">
         <div class="gridStyle" ng-grid="gridOptions"></div>
       </div>
     </div>

@@ -112,7 +112,7 @@ or explicitly via
 
 ### Showing or hiding controls dynamically
 
-Use the **control-group-attributes** or **control-attributes** object to add ng-hide / ng-show expressions to controls to dynamically show/hide them based on the entity's values. e.g. to conditionally hide the entire control-group div with label and control use this:
+Use the **control-group-attributes** or **control-attributes** object to add ng-hide / ng-show expressions to controls to dynamically show/hide them based on the entity's values. e.g. to conditionally hide the entire form-group div with label and control use this:
 
     properties: {
       foo: {

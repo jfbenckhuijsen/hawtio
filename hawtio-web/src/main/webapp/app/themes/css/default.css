@@ -734,7 +734,7 @@ td.adding {
   box-shadow: inset rgba(255, 168, 27, 0.2) 0 0 30px 10px;
 }
 
-.login-form form fieldset .control-group label {
+.login-form form fieldset .form-group label {
   color: white;
 }
 
@@ -1002,7 +1002,7 @@ ol.zebra-list > li:nth-child(even):before {
   border-bottom: 1px solid #d4d4d4;
 }
 
-.log-info-panel > .log-info-panel-frame > .log-info-panel-body > .row-fluid > span {
+.log-info-panel > .log-info-panel-frame > .log-info-panel-body > .row > span {
   margin-right: 7px;
   white-space: nowrap;
 }

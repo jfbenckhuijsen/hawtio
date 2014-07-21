@@ -1,4 +1,4 @@
-///<reference path="formHelpers.ts"/>
+///<reference path="formHelpers.ts" />
 module Forms {
 
   export class InputTableConfig {
@@ -23,7 +23,7 @@ module Forms {
     public action = '';
 
     public tableclass = 'table table-striped inputTable';
-    public controlgroupclass = 'control-group';
+    public controlgroupclass = 'form-group';
     public controlclass = 'controls pull-right';
     public labelclass = 'control-label';
 
@@ -182,7 +182,7 @@ module Forms {
           backdropFade: true,
           dialogFade:true
         };
-        scope.showAddDialog = false;
+        scope.showAddDialog = new UI.Dialog();
 
         scope.openAddDialog = () => {
           // lets lazily create the add dialog
@@ -192,7 +192,7 @@ module Forms {
           var childDataModelName = "addFormConfig";
           if (!addDialog) {
             var title = "Add " + tableName;
-            addDialog = $('<div modal="showAddDialog" close="closeAddDialog()" options="addDialogOptions">\n' +
+            addDialog = $('<div modal="showAddDialog.show" close="closeAddDialog()" options="addDialogOptions">\n' +
               '<div class="modal-header"><h4>' + title + '</h4></div>\n' +
               '<div class="modal-body"><div simple-form="addFormConfig" entity="addEntity" data="'
               + childDataModelName + '" schema="' + schemaName + '"></div></div>\n' +
@@ -203,12 +203,12 @@ module Forms {
             div.append(addDialog);
             this.$compile(addDialog)(scope);
           }
-          scope.showAddDialog = true;
+          scope.showAddDialog.open();
           Core.$apply(scope);
         };
 
         scope.closeAddDialog = () => {
-          scope.showAddDialog = false;
+          scope.showAddDialog.close();
           scope.addEntity = {};
         };
 
@@ -236,7 +236,7 @@ module Forms {
           backdropFade: true,
           dialogFade:true
         };
-        scope.showEditDialog = false;
+        scope.showEditDialog = new UI.Dialog();
 
         scope.openEditDialog = () => {
           var selected = scope.config.selectedItems;
@@ -251,7 +251,7 @@ module Forms {
           // lets lazily create the edit dialog
           if (!editDialog) {
             var title = "Edit " + tableName;
-            editDialog = $('<div modal="showEditDialog" close="closeEditDialog()" options="editDialogOptions">\n' +
+            editDialog = $('<div modal="showEditDialog.show" close="closeEditDialog()" options="editDialogOptions">\n' +
                     '<div class="modal-header"><h4>' + title + '</h4></div>\n' +
                     '<div class="modal-body"><div simple-form="editFormConfig" entity="editEntity"></div></div>\n' +
                     '<div class="modal-footer">' +
@@ -261,12 +261,12 @@ module Forms {
             div.append(editDialog);
             this.$compile(editDialog)(scope);
           }
-          scope.showEditDialog = true;
+          scope.showEditDialog.open();
           Core.$apply(scope);
         };
 
         scope.closeEditDialog = () => {
-          scope.showEditDialog = false;
+          scope.showEditDialog.close();
           scope.editEntity = {};
         };
 

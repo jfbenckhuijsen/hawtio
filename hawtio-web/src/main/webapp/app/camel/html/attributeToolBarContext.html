@@ -1,6 +1,6 @@
-<div class="row-fluid">
+<div class="row">
   <div class="col-md-6" ng-controller="Camel.AttributesToolBarController">
-    <div class="control-group">
+    <div class="form-group">
       <button class="btn" ng-disabled="!anySelectionHasState(['stop', 'suspend'])" ng-click="start()"><i
               class="icon-play-circle"></i> Start
       </button>
@@ -23,7 +23,7 @@
 
   </div>
   <div class="col-md-6">
-    <div class="control-group">
+    <div class="form-group">
       <input class="col-md-12 search-query" type="text" ng-model="$parent.gridOptions.filterOptions.filterText" placeholder="search">
     </div>
   </div>
